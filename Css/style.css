@@ -1,0 +1,292 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+/* image */
+.container .myimage {
+  width: 300px;
+  border-radius: 50%;
+}
+
+/* navbar active */
+#navbarNav .active {
+    color: #8818d7;
+}
+
+#navbarNav a {
+    font-weight: bold;
+    color: #000;
+}
+
+#navbarNav a:hover {
+    color: #8818d7;
+}
+
+/* Main */
+.row .name {
+    color: #8818d7;
+    font-size: 35px;
+}
+
+.row h2 {
+    color: #000;
+}
+.main {
+    padding-top: 50px;
+}
+
+.main span {
+    margin-bottom: 10px;
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.col {
+    display: flex;
+    gap: 20px;
+}
+
+.col .col1 {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #8818d7;
+    padding: 8px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.col .col2 {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #8818d7;
+    padding: 8px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.col .col1 a,
+.col .col2 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.col1 a:hover,
+.col2 a:hover {
+    color: #ddd;
+}
+
+/* social media icons */
+.social-media i {
+    margin-right: 15px;
+    color: #fff;
+    font-size: 20px;
+    background-color: #8818d7;
+    padding: 5px 8px;
+    border-radius: 50%;
+    border: 2px solid #8818d7;
+}
+
+.social-media .container:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
+/* Services */
+#services {
+    margin-top: 100px;
+}
+
+.service-card {
+    transition: transform 0.3s ease;
+  }
+
+  .service-card:hover {
+    transform: translateY(-10px);
+  }
+
+  .text-center i {
+    color: #8818d7;
+  }
+
+  /* Hire me */
+  .form {
+    margin-top: 250px;
+  }
+
+  #myform input {
+    width: 50%;
+    outline: none;
+    box-shadow: none;
+    border-color: #5e5d5d6a;
+  }
+
+  #myform textarea {
+    width: 50%;
+    outline: none;
+    box-shadow: none;
+    border-color: #5e5d5d6a;
+    resize: none;
+  }
+
+  #myform button {
+    width: 20%;
+    padding: 10px;
+    background-color: #8818d7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #myform button:hover {
+    background-color: #4a0879;
+  }
+
+  /*Let's talk */
+  .Talk {
+    margin-top: 200px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .button-btn {
+    text-decoration: none;
+    background-color: #8818d7;
+    padding: 8px 8px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .button-btn:hover {
+    color: #ddd;
+  }
+
+  .Talk .text-start {
+    font-size: 20px;
+    color: #8818d7;
+  }
+
+  .Talk .text-start a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+  }
+
+  
+  .Talk input {
+    width: 50%;
+    outline: none;
+    box-shadow: none;
+    border-color: #5e5d5d6a;
+  }
+
+  .Talk textarea {
+    width: 50%;
+    outline: none;
+    box-shadow: none;
+    border-color: #5e5d5d6a;
+    resize: none;
+  }
+
+  .btn-btn {
+    text-align: start;
+    border-radius: 10px;
+  }
+
+  .btn-btn .btn {
+    color: #fff;
+    background: #8818d7; 
+  }
+
+  .btn-btn .btn:hover {
+    color: #ddd;
+  }
+
+  .social-links i {
+    margin-right: 15px;
+    font-size: 25px;
+    color: #8818d7;
+}
+
+.social-links i:hover {
+    color: #4a0879;
+}
+
+
+  /* footer */
+.footer {
+    margin-top: 100px;
+}
+
+.footer a {
+    color: #3498db;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-align: start;
+  }
+
+  .footer i {
+    margin-right: 5px;
+    font-size: 20px;
+  }
+
+  .footer .container a {
+    color: #000;
+  }
+
+  .footer .container h2 {
+    font-size: 35px;
+  }
+
+  .Copyright {
+    background-color: #4a0879;
+    height: 50px;
+  }
+
+  /* Project card body */
+    .card-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #333;
+    }
+  
+    .card-text {
+      font-size: 0.95rem;
+      color: #555;
+    }
+  
+    .tech-tags {
+      font-size: 0.85rem;
+      background-color: #e9ecef;
+      border-radius: 5px;
+      padding: 2px 8px;
+      margin-right: 5px;
+      display: inline-block;
+    }
+  
+    .btn-primary,
+    .btn-outline-dark {
+      margin-top: 10px;
+    }
+  
+    .card-body {
+      background-color: #f8f9fa;
+      border-top: 1px solid #ddd;
+    }
+
+
+    
+
