@@ -184,19 +184,17 @@ body {
     font-size: 18px;
   }
 
-  
   .Talk input {
     width: 50%;
     outline: none;
     box-shadow: none;
-    border-color: #5e5d5d6a;
+    border: none;
   }
 
   .Talk textarea {
     width: 50%;
     outline: none;
     box-shadow: none;
-    border-color: #5e5d5d6a;
     resize: none;
   }
 
@@ -207,7 +205,7 @@ body {
 
   .btn-btn .btn {
     color: #fff;
-    background: #8818d7; 
+    background: #000; 
   }
 
   .btn-btn .btn:hover {
@@ -217,13 +215,12 @@ body {
   .social-links i {
     margin-right: 15px;
     font-size: 25px;
-    color: #8818d7;
+    color: #000;
 }
 
 .social-links i:hover {
     color: #4a0879;
 }
-
 
   /* footer */
 .footer {
@@ -253,7 +250,7 @@ body {
 
   .Copyright {
     background-color: #4a0879;
-    height: 50px;
+    height: 70px;
   }
 
   /* Project card body */
@@ -286,6 +283,50 @@ body {
       background-color: #f8f9fa;
       border-top: 1px solid #ddd;
     }
+
+    /* Background color for services */
+    .background-services {
+      background-color: #000;
+    }
+
+    /* Background color and styling for contact */
+    .contact-background {
+      background-color: #000;
+    }
+
+    .contact-me {
+      font-size: 2.5rem;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .contact-emoji {
+      width: 400px;
+      border-radius: 50%;
+    }
+
+    .container .contactme i {
+      font-size: 30px;
+      margin-right: 10px;
+    }
+
+    .container a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    /* Background color for hireme */
+    .hireme-background {
+      background-color: #000;
+    }
+
+    /* Background color for let's talk */
+    .Talk-background {
+      background-color: #ddd;
+    }
+
+  
+
+
 
 
     
