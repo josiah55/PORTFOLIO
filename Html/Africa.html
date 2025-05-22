@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Africa Photos Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/Css/style.css">
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/index.html"><img src="/Images/lens1.PNG" alt="" class="photo-logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link text-warning" href="#explore">Explore</a></li>
+        <li class="nav-item">
+          <a class="nav-link text-warning" href="/Html/blog.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-warning" href="/Html/blog.html">Contact-Us</a>
+        </li>
+      </ul>
+      <form class="d-flex me-2">
+        <input class="form-control me-2" type="search" placeholder="Search photos...">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+      <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginModal">Login/Signup</button>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Login/Signup Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Login or Signup</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label>Email address</label>
+            <input type="email" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label>Password</label>
+            <input type="password" class="form-control" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+        <hr>
+        <p class="text-center">Don't have an account? <a href="#">Signup here</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- About Section -->
+<section class="bg-light py-5" id="about">
+  <div class="container pt-5 mt-5">
+    <h2 class="text-center mb-4 pt-5">ABOUT LENSI AFRICA</h2>
+    <p class="fs-5">Step into the heart of Africa through our vibrant and diverse Photo Gallery, where every image captures the spirit, beauty, and culture of the continent. From powerful portraits of African pastors and inspiring entrepreneurs to the rich traditions, natural wonders, music, and comedy that define our people — this is a space that celebrates Africa in all its glory.</p>
+    <p class="fs-5">Browse through carefully curated categories such as African cultures, celebrities, musicians, comedians, nature, and business moguls. Discover stories told through visuals — from the colorful festivals and sacred ceremonies to the faces
+    shaping Africa's future.</p>
+    <p class="fs-5">Our goal is to preserve and showcase authentic African moments. Each photo is reviewed for quality and cultural relevance to ensure a meaningful experience. To download images or upload your own, simply sign in and become part of our growing community.</p>
+    <p class="fs-5">This gallery is for anyone who loves Africa, lives Africa, or wants to learn more about its powerful visual stories. Welcome — this is Africa, captured through the lens.</p>
+  </div>
+</section>
+
+<!---->
+<section class="container mt-5 pt-5">
+  <div class="row">
+    <div class="col-md-4 pt-5">
+      <form class="d-flex me-2 pt-5 mt-5">
+        <input class="form-control me-2" type="search" placeholder="Search photos...">
+        <button class="btn btn-outline-dark" type="submit">Search</button>
+      </form>
+    </div>
+    <div class="col-md-3">
+      <div class="col">
+        <div class="card gallery-card">
+          <a href="/Html/afrovista.html">
+          <img src="/Images/Techie.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Afrovista</h5>
+            <span class="text-muted">35 images</span>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Explore Section -->
+<section class="container my-5 pt-5" id="explore">
+  <h2 class="mb-4 text-center pt-5">Explore Categories</h2>
+  <div class="d-flex flex-wrap justify-content-center gap-3">
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#categoryModal">Pastors</button>
+    <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#musicianModal">Musicians</button>
+    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#natureModal">Nature</button>
+    <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#businessModal">Business Moguls</button>
+    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#traditionModal">Tradition</button>
+    <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#celebritiesModal">Celebrities</button>
+  </div>
+</section>
+
+
+
+
+
+<!-- Pastors Modal with Nested Names -->
+<div class="modal fade" id="categoryModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"><img src="/Images/Pastors/church.png" alt="" class="generalmodal"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group">
+          <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#pastorPhotosModal"
+              data-bs-dismiss="modal">Pastor E.A Adeboye</a></li>
+          <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#pastorPhotosModal"
+          data-bs-dismiss="modal">Pastor W.F Kumuyi</a></li>
+          <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal"data-bs-target="#pastorPhotosModal" data-bs-dismiss="modal">Pastor Chris Oyakhilome</a></li>
+          <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#pastorPhotosModal"
+          data-bs-dismiss="modal">Apostle Johnson Suleman</a></li>
+          <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#pastorPhotosModal"
+          data-bs-dismiss="modal">Apostle Joshua Selman</a></li>
+          <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#pastorPhotosModal"
+          data-bs-dismiss="modal">Bishop David Oyedepo</a></li>
+          <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#pastorPhotosModal"
+          data-bs-dismiss="modal">Pastor Jery Eze</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Musician Modal with Nested Names -->
+<div class="modal fade" id="musicianModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"><img src="/Images/3.jpg" alt="" class="generalmodal"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group">
+          <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#musicianPhotosModal"
+              data-bs-dismiss="modal">Musician A</a></li>
+          <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#musicianPhotosModal"
+              data-bs-dismiss="modal">Musician B</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Nature Modal with Nested Names -->
+<div class="modal fade" id="natureModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"><img src="/Images/3.jpg" alt="" class="generalmodal"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group">
+          <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#musicianPhotosModal"
+              data-bs-dismiss="modal">Nature A</a></li>
+          <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#musicianPhotosModal"
+          data-bs-dismiss="modal">Nature B</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Business-mogul Modal with Nested Names -->
+<div class="modal fade" id="businessModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"><img src="" alt="" class="generalmodal"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group">
+          <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#musicianPhotosModal"
+              data-bs-dismiss="modal">Business mogul A</a></li>
+          <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#musicianPhotosModal"
+          data-bs-dismiss="modal">Business mogul B</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Tradition Modal with Nested Names -->
+<div class="modal fade" id="traditionModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"><img src="/Images/3.jpg" alt="" class="generalmodal"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group">
+          <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#musicianPhotosModal"
+              data-bs-dismiss="modal">Tradition  A</a></li>
+          <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#musicianPhotosModal"
+          data-bs-dismiss="modal">Tradition B</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Celebrities Modal with Nested Names -->
+<div class="modal fade" id="celebritiesModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"><img src="" alt="" class="generalmodal"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group">
+          <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#musicianPhotosModal"
+              data-bs-dismiss="modal">Celebrities A</a></li>
+          <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#musicianPhotosModal"
+          data-bs-dismiss="modal">Celebrities B</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Nested Modal for Pastor Photos -->
+<div class="modal fade" id="pastorPhotosModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Pastor E.A Adeboye</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3">
+          <div class="col-md-4">
+            <img src="/Images/Pastors/Dad GO.jpg" class="img-fluid rounded">
+            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+          </div>
+          <div class="col-md-4">
+            <img src="/Images/Pastors/Daddy GO..jpg" class="img-fluid rounded">
+            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+          </div>
+          <div class="col-md-4">
+            <img src="/Images/Pastors/Daddy GO1.jpg" class="img-fluid rounded">
+            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+          </div>
+          <div class="col-md-4">
+            <img src="/Images/Pastors/Daddy GO2.webp" class="img-fluid rounded">
+            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100">Download</a>
+          </div>
+          <div class="col-md-4">
+            <img src="/Images/Pastors/Daddy-Go.jpg" class="img-fluid rounded">
+            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100">Download</a>
+          </div>
+          <div class="col-md-4">
+            <img src="/Images/Pastors/PAPA-Adeboye-2.jpg" class="img-fluid rounded">
+            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+          </div>
+          <!-- Add more images dynamically here -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Nested Modal for Musician Photos -->
+<div class="modal fade" id="musicianPhotosModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Photos of Selected Musician</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3">
+          <div class="col-md-4">
+            <img src="https://via.placeholder.com/300" class="img-fluid rounded">
+            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100">Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+
+
+<!-- Cards Gallery -->
+<section class="container my-5">
+  <h3 class="mb-4 text-center">Featured Photos</h3>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card gallery-card">
+        <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Photo Title</h5>
+          <a href="#" class="btn btn-outline-primary">Download</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card gallery-card">
+        <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Photo Title</h5>
+          <a href="#" class="btn btn-outline-primary">Download</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card gallery-card">
+        <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Photo Title</h5>
+          <a href="#" class="btn btn-outline-primary">Download</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card gallery-card">
+        <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Photo Title</h5>
+          <a href="#" class="btn btn-outline-primary">Download</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card gallery-card">
+        <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Photo Title</h5>
+          <a href="#" class="btn btn-outline-primary">Download</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card gallery-card">
+        <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Photo Title</h5>
+          <a href="#" class="btn btn-outline-primary">Download</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card gallery-card">
+        <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Photo Title</h5>
+          <a href="#" class="btn btn-outline-primary">Download</a>
+        </div>
+      </div>
+    </div>
+    <!-- More cards can be added here -->
+  </div>
+</section>
+  
+  <hr/>
+<!--upload your photo-->
+<section class="container my-5 pt-5 my_container">
+  <h2 class="text-center mb-4">Upload Your Photo</h2>
+  <form id="uploadForm" enctype="multipart/form-data">
+    <div class="mb-3">
+      <label for="photoTitle" class="form-label">Photo Title</label>
+      <input type="text" class="form-control" id="photoTitle" placeholder="Enter a title for your photo" required>
+    </div>
+    <div class="mb-3">
+      <label for="photoUpload" class="form-label">Choose Photo</label>
+      <input class="form-control" type="file" id="photoUpload" accept="image/*" required>
+    </div>
+    <div class="d-grid">
+      <button type="submit" class="btn btn-dark">Upload Photo</button>
+    </div>
+  </form>
+  <!-- Preview Uploaded Image -->
+  <div id="previewContainer" class="mt-4" style="display: none;">
+    <h5>Preview:</h5>
+    <img id="previewImage" class="img-fluid rounded shadow" alt="Uploaded Preview">
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container text-center text-md-start">
+    <div class="row text-center text-md-start">
+
+      <!-- About Section -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 fw-bold text-warning">About Gallery</h5>
+        <p>
+          Discover Africa through powerful imagery. From culture and nature to iconic personalities, our gallery
+          captures the vibrant spirit of the continent.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 fw-bold text-warning">Quick Links</h5>
+        <p><a href="#explore" class="text-white text-decoration-none">Explore</a></p>
+        <p><a href="#upload" class="text-white text-decoration-none">Upload Photo</a></p>
+        <p><a href="#categories" class="text-white text-decoration-none">Categories</a></p>
+        <p><a href="#about" class="text-white text-decoration-none">About Us</a></p>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 fw-bold text-warning">Contact</h5>
+        <p><i class="fas fa-home me-3"></i> Lagos, Nigeria</p>
+        <p><i class="fas fa-envelope me-3"></i> support@africagallery.com</p>
+        <p><i class="fas fa-phone me-3"></i> +234 800 123 4567</p>
+      </div>
+
+      <!-- Social Media -->
+      <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 fw-bold text-warning">Follow Us</h5>
+        <a href="#" class="text-white me-4"><i class="bi bi-facebook text-white"></i></a>
+        <a href="#" class="text-white me-4"><i class="bi bi-twitter text-white"></i></a>
+        <a href="#" class="text-white me-4"><i class="bi bi-instagram text-white"></i></a>
+        <a href="#" class="text-white me-4"><i class="bi bi-youtube text-white"></i></a>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="row mt-4">
+      <div class="col-md-12 text-center">
+        <p class="text-white-50">© 2025 Africa Photo Gallery. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="/Script/script.js"></script>
+  </body>
+  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
