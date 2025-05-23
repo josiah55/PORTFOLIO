@@ -6,6 +6,7 @@
 
 body {
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 /* logo */
@@ -500,7 +501,7 @@ color: #1877F2;
 }
 
 
-/* photobloom */
+/* lensi africa */
 .gallery-card img {
   height: 200px;
   object-fit: cover;
@@ -520,10 +521,176 @@ color: #1877F2;
   justify-items: center;
 }
 
-/* photobloom logo*/
+/* lensi africa logo*/
 .photo-logo {
   width: 150px;
   border: 1px solid #000;
   border-radius: 5px;
   
+}
+
+/*Explore*/
+.Pastor {
+  width: 100px;
+  border-radius: 5px;
+}
+
+/*Explore download card buttons*/
+.my-gallery-card {
+  position: absolute;
+  bottom: 20px;
+  right: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.my-gallery-card5 {
+  position: absolute;
+  top: 160px;
+  left: 200px;
+}
+
+.my-gallery-card5 {
+  position: absolute;
+  top: 160px;
+  left: 200px;
+}
+
+.my-gallery-card6 {
+  position: absolute;
+  top: 118px;
+  left: 200px;
+}
+
+.my-gallery-card8 {
+  position: absolute;
+  top: 159px;
+  left: 200px;
+}
+
+.my-gallery-card9 {
+  position: absolute;
+  top: 115px;
+  left: 200px;
+}
+
+@media (max-width: 576px) {
+  .my-gallery-card5 {
+    position: absolute;
+    top: 145px;
+    left: 130px;
+  }
+}
+
+@media (max-width: 576px) {
+  .my-gallery-card6 {
+    position: absolute;
+    top: 108px;
+    left: 130px;
+  }
+}
+
+@media (max-width: 576px) {
+  .my-gallery-card8 {
+    position: absolute;
+    top: 148px;
+    left: 140px;
+  }
+}
+
+@media (max-width: 576px) {
+  .my-gallery-card9 {
+    position: absolute;
+    top: 145px;
+    left: 140px;
+  }
+}
+
+
+/*card img size in Explore*/
+.card .card-img-top {
+ max-width: 500px;
+}
+
+/*img top num*/
+.my-img-top {
+  position: absolute;
+  top: -30px;
+}
+
+.my-img-top5 {
+  position: absolute;
+  top: -30px;
+}
+
+.my-img-top6 {
+  position: absolute;
+  top: -30px;
+}
+
+.my-img-top8 {
+  position: absolute;
+  top: -32px;
+}
+
+.my-img-top9 {
+  position: absolute;
+  top: -72px;
+}
+
+.my-img-top11 {
+  position: absolute;
+  top: -375px;
+}
+
+/*media querry*/
+@media (max-width: 576px) {
+  .my-img-top5 {
+    position: relative;
+    top: -2px;
+  }
+}
+
+@media (max-width: 576px) {
+  .my-img-top6 {
+    position: relative;
+    top: -2px;
+  }
+}
+
+@media (max-width: 576px) {
+  .my-img-top7 {
+    position: relative;
+  }
+}
+
+@media (max-width: 576px) {
+  .my-img-top8 {
+    position: relative;
+    top: -2px;
+  }
+}
+
+@media (max-width: 576px) {
+  .my-img-top9 {
+    position: relative;
+    top: -2px;
+  }
+}
+
+@media (max-width: 576px) {
+  .my-img-top10 {
+    position: relative;
+  }
+}
+
+@media (max-width: 576px) {
+  .my-img-top11 {
+    position: relative;
+    top: -2px;
+  }
+}
+/*the large img when clicked on the card img*/
+.img-fluid {
+  width: 600px;
 }
