@@ -136,22 +136,6 @@ body {
   background-color: #7a1cbc;
 }
 
-/* social media icons 
-.social-media i {
-    margin-right: 15px;
-    color: #fff;
-    font-size: 20px;
-    background-color: #8818d7;
-    padding: 5px 8px;
-    border-radius: 50%;
-    border: 2px solid #8818d7;
-}
-
-.social-media .container:hover {
-    transform: translateY(-10px);
-    transition: transform 0.3s ease;
-}
-  */
 
 /* Services */
 #services {
@@ -354,12 +338,6 @@ body {
 .my-img {
   width: 400px;
 }
-
-
-
-
-
-
 
 
 /*React vs Vue Js styling*/
