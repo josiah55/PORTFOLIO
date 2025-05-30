@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/Css/style.css">
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+        <div class="container">
+            <h1 class="navbar-brand fw-bold fs-2"><a href="/Html/blog.html">><img src="/Images/logo-001.jpg" alt="" class="logo001 mb-0"></a></h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                
+            </div>
+        </div>
+    </nav>
+    
+    
+    <!--main-->
+    <section class="main">
+    <div class="container pt-5 mt-5">
+        <h1 class="pt-5 mt-5">🔍 What Is Webpack?</h1>
+        <p>Webpack is a mature and highly configurable bundler that transforms, bundles, and optimizes your code for the browser.</p>
+        
+        <ul>
+            <li><strong>Modular:</strong> Uses a dependency graph to bundle JS, CSS, images, and more.</li>
+            <li><strong>Plugins & Loaders:</strong> Supports Babel, Sass, TypeScript, and nearly every frontend technology.</li>
+            <li><strong>Dev Server:</strong> Offers hot module replacement (HMR) but can be slow on large projects.</li>
+            <li><strong>Configuration Heavy:</strong> Requires detailed setup for advanced use cases.</li>
+        </ul>
+        <pre><code> // webpack.config.js module.exports = { entry: './src/index.js', output: { filename: 'bundle.js', path: __dirname + '/dist', }, module: { rules: [ { test: /\.css$/, use: ['style-loader', 'css-loader'] }, { test: /\.js$/, exclude: /node_modules/, use: 'babel-loader' } ] } } </code></pre>
+
+        <h1>⚡ What Is Vite?</h1>
+        <p>Vite is a next-gen frontend tooling built by Evan You (creator of Vue.js). It offers instant dev start, native ES
+        modules, and blazing fastHMR.</p>
+        
+        <ul>
+            <li><strong>Lightning-Fast Startup:</strong> Uses native ES modules—no bundling on dev.</li>
+            <li><strong>Zero Config:</strong> Works out of the box for most projects.</li>
+            <li><strong>Optimized Builds:</strong> Uses Rollup under the hood for production builds.</li>
+            <li><strong>Rich Plugin Ecosystem:</strong> Supports Vue, React, Preact, Lit, and more.</li>
+        </ul>
+        <pre><code> // vite.config.js import { defineConfig } from 'vite'; export default defineConfig({ root: './src', build: { outDir: '../dist' } }); </code></pre>
+
+       <h2>⚖️ Side-by-Side Comparison</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Webpack</th>
+                    <th>Vite</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dev Server Speed</td>
+                    <td>Slower on large projects</td>
+                    <td>Instant startup via native ES modules</td>
+                </tr>
+                <tr>
+                    <td>Build Time</td>
+                    <td>Medium to slow</td>
+                    <td>Faster with Rollup</td>
+                </tr>
+                <tr>
+                    <td>Config Complexity</td>
+                    <td>High (requires plugins/loaders)</td>
+                    <td>Minimal (zero-config for many cases)</td>
+                </tr>
+                <tr>
+                    <td>Community</td>
+                    <td>Very large and mature</td>
+                    <td>Fast-growing, modern</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>🧠 Which Should You Use?</h2>
+        <ul>
+            <li><strong>Choose Webpack if:</strong> You need full control, custom loaders, or are working with legacy setups.
+            </li>
+            <li><strong>Choose Vite if:</strong> You want speed, simplicity, and modern JS framework support (React, Vue, etc.).
+            </li>
+        </ul>
+
+        <h2>🧪 Real-World Example</h2>
+        <p>Let’s say you're building a Vue or React app. Here’s how quick a Vite setup is:</p>
+        
+        <pre><code> // Create a Vite React app npm create vite@latest my-app --template react cd my-app npm install npm run dev </code></pre>
+        <p>Compare that to a Webpack React setup:</p>
+        
+        <pre><code> // Create a React app with Webpack manually npm init -y npm install react react-dom webpack webpack-cli babel-loader @babel/core @babel/preset-react html-webpack-plugin // then set up config files, scripts, etc. </code></pre>
+
+        <h2>🚀 Final Verdict</h2>
+        <p>Vite is ideal for modern projects, prototyping, and getting started fast. Webpack is still powerful for enterprise-grade
+        apps with complex needs.</p>
+        
+        <p><strong>💡 Pro Tip:</strong>If you’re starting fresh in 2025—go with Vite. For older projects or edge-case setups, Webpack still rules.</p>
+    </div>
+    </section>
+    <div class="container mb-5"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"crossorigin="anonymous"></script>
+<script src="/Script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/Css/style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg bg-white fixed-top">
+    <div class="container">
+        <h1 class="navbar-brand fw-bold fs-2"><a href="/Html/blog.html">><img src="/Images/logo-001.jpg" alt=""
+                    class="logo001 mb-0"></a></h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        </div>
+    </div>
+</nav>
+
+<!--main-->
+<section class="container pt-5">
+    <h1 class="mt-5 pt-5">🌙 How to Add a Dark Mode Toggle to Your Website</h1>
+    <p>Dark mode is a popular UI feature that gives users the option to switch between light and dark themes. It’s easy to
+    implement with just HTML, CSS, and JavaScript. Let’s build it step-by-step!</p>
+    
+    <span>🧰 What You’ll Need</span>
+    <ul>
+        <li><strong>Basic HTML structure</strong> with linked CSS and JS.</li>
+        <li><strong>CSS variables</strong> to handle theme colors.</li>
+        <li><strong>JavaScript toggle</strong> to switch themes.</li>
+    </ul>
+
+    <h2>🧾 Step 1: Create Your HTML Structure</h2>
+    <pre><code> &lt;!DOCTYPE html&gt; &lt;html lang="en"&gt; &lt;head&gt; &lt;meta charset="UTF-8" /&gt; &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt; &lt;title&gt;Dark Mode Toggle&lt;/title&gt; &lt;link rel="stylesheet" href="style.css" /&gt; &lt;/head&gt; &lt;body&gt; &lt;button id="toggle-btn"&gt;Toggle Dark Mode&lt;/button&gt; &lt;h1&gt;Welcome to My Website&lt;/h1&gt; &lt;p&gt;This is a simple example with a dark mode toggle.&lt;/p&gt; &lt;script src="script.js"&gt;&lt;/script&gt; &lt;/body&gt; &lt;/html&gt; </code></pre>
+
+    <h2>🎨 Step 2: Write the CSS with Theme Variables</h2>
+    <pre><code> :root { --bg-color: #ffffff; --text-color: #000000; } body { background-color: var(--bg-color); color: var(--text-color); font-family: sans-serif; transition: all 0.3s ease-in-out; } body.dark-mode { --bg-color: #121212; --text-color: #f5f5f5; } #toggle-btn { margin: 20px; padding: 10px 20px; cursor: pointer; } </code></pre>
+
+    <h2>🧠 Step 3: Add JavaScript to Toggle the Theme</h2>
+    <pre><code> const toggleBtn = document.getElementById("toggle-btn"); toggleBtn.addEventListener("click", () =&gt; { document.body.classList.toggle("dark-mode"); // Optional: change button text if (document.body.classList.contains("dark-mode")) { toggleBtn.textContent = "Switch to Light Mode"; } else { toggleBtn.textContent = "Switch to Dark Mode"; } }); </code></pre>
+
+    <span class="fw-bold">🖼️ Final Output Preview</span>
+    <p>Your website now has a button that switches between light and dark themes instantly. Try clicking the toggle and watch the background and text color adjust smoothly!</p>
+    
+    <span class="fs-5 fw-bold">✅ Pro Tips</span>
+    <ul>
+        <li><strong>Local Storage:</strong> Use <code>localStorage</code> to remember the user’s choice across sessions.</li>
+        <li><strong>Icons:</strong> Add a moon/sun icon for better UI experience.</li>
+        <li><strong>Animations:</strong> Enhance the transition with fade or slide effects.</li>
+    </ul>
+
+    <p>Below is a downloadable styled project with preview on How to Add a Dark Mode Toggle to Your Website</p>
+    <a class="text-primary pb-4" href="/Downloads/dark_mode_toggle_project.zip" download="">Download Now</a>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"crossorigin="anonymous"></script>
+<script src="/Script/script.js"></script>
+</body>
+</html>

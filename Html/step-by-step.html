@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/Css/style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg bg-white fixed-top">
+    <div class="container">
+        <h1 class="navbar-brand fw-bold fs-2"><a href="/Html/blog.html">><img src="/Images/logo-001.jpg" alt=""
+                    class="logo001 mb-0"></a></h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        </div>
+    </div>
+</nav>
+
+<!--main-->
+<section class="container pt-5">
+    <h1 class="pt-5 mt-5">🚀 Step-by-Step: Hosting Your Portfolio on GitHub Pages</h1>
+    <p>Want to showcase your portfolio online for free? GitHub Pages is a great way to host static websites like portfolios
+    without needing a paid server. It's fast, simple, and developer-friendly.</p>
+    
+    <span class="fw-bold">🧰 What You’ll Need</span>
+    <ul>
+        <li><strong>GitHub Account:</strong> Sign up at <a class="text-primary" href="https://github.com" target="_blank" rel="noopener noreferrer">github.com</a> if you don't have one.</li>
+        <li><strong>Portfolio Files:</strong> A folder with your HTML, CSS, images, and assets.</li>
+        <li><strong>Git Installed:</strong> Make sure Git is installed on your computer from <a class="text-primary" href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">git-scm.com</a>.</li>
+    </ul>
+    <h2>🧭 Step 1: Create a New GitHub Repository</h2>
+    <ol>
+        <li>Login to your GitHub account.</li>
+        <li>Click the <strong>+</strong> icon at the top-right &gt; <strong>New repository</strong>.</li>
+        <li>Give your repo a name, e.g. <code>my-portfolio</code>.</li>
+        <li>Check <strong>Public</strong> and click <strong>Create repository</strong>.</li>
+    </ol>
+    <h2>🧾 Step 2: Upload Your Portfolio Files</h2>
+    <span>You can do this in two ways:</span>
+    
+    <h3>✅ Option A: Upload via GitHub UI</h3>
+    <ol>
+        <li>Go to the repository you just created.</li>
+        <li>Click <strong>Upload files</strong>.</li>
+        <li>Select your HTML, CSS, and asset files from your computer.</li>
+        <li>Click <strong>Commit changes</strong>.</li>
+    </ol>
+    <h3>✅ Option B: Upload Using Git CLI</h3>
+    <pre><code> git init git remote add origin https://github.com/yourusername/my-portfolio.git git add . git commit -m "Initial commit" git push -u origin master </code></pre>
+    
+    <h2>🌐 Step 3: Enable GitHub Pages</h2>
+    <ol>
+        <li>Go to your repository’s <strong>Settings</strong>.</li>
+        <li>Scroll to <strong>Pages</strong> on the left menu.</li>
+        <li>Under “Source”, choose <code>main</code> or <code>master</code> branch and select <code>/ (root)</code>.</li>
+        <li>Click <strong>Save</strong>.</li>
+    </ol>
+    <p>🟢 GitHub will now deploy your site and provide a live URL like:
+    https://yourusername.github.io/my-portfolio</p>
+    
+    <h2>🎉 Step 4: View Your Live Portfolio</h2>
+    <p>Wait a few seconds, then open your browser and enter your new link:</p>
+    
+    <pre><code> https://yourusername.github.io/my-portfolio </code></pre>
+    <p>You should now see your portfolio live and online!</p>
+    
+    <p class="fs-4 fw-bold">💡 Pro Tips</p>
+    <ul>
+        <li><strong>Custom Domain:</strong> You can point your GitHub Pages site to a custom domain using the DNS settings.</li>
+        <li><strong>Update Any Time:</strong> Just push new code to the repo and your site updates automatically.</li>
+        <li><strong>404 Page:</strong> Add a custom <code>404.html</code> page for better error handling.</li>
+    </ul>
+    
+    <p class="fs-4">🧪 Bonus: Minimal Portfolio Example</p>
+    <pre><code> &lt;!DOCTYPE html&gt; &lt;html lang="en"&gt; &lt;head&gt; &lt;meta charset="UTF-8" /&gt; &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt; &lt;title&gt;My Portfolio&lt;/title&gt; &lt;link rel="stylesheet" href="style.css" /&gt; &lt;/head&gt; &lt;body&gt; &lt;header&gt;&lt;h1&gt;Hi, I'm Jane!&lt;/h1&gt;&lt;/header&gt; &lt;main&gt; &lt;p&gt;Welcome to my portfolio website hosted on GitHub Pages!&lt;/p&gt; &lt;/main&gt; &lt;/body&gt; &lt;/html&gt; </code></pre>
+    
+    <span class="fw-bold">✅ Final Thoughts</span>
+    <p class="mb-5">GitHub Pages is a powerful, free option to get your portfolio live in minutes. Whether you’re a student or a seasoned
+    developer, hosting on GitHub makes your work publicly accessible and professional.</p>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"crossorigin="anonymous"></script>
+<script src="/Script/script.js"></script>
+</body>
+</html>

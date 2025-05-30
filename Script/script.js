@@ -31,7 +31,7 @@ function updateTime() {
 setInterval(updateTime, 1000);
 
 
-//bbbbbbb
+//upload your photo
 const uploadForm = document.getElementById('uploadForm');
 const photoUpload = document.getElementById('photoUpload');
 const previewContainer = document.getElementById('previewContainer');
@@ -53,6 +53,20 @@ uploadForm.addEventListener('submit', (e) => {
   e.preventDefault();
   alert("This is a demo upload. To make it work, connect to a backend.");
 });
+
+
+//carousel
+const modal = document.getElementById('fullModal');
+const carousel = document.getElementById('modalCarousel');
+
+modal.addEventListener('show.bs.modal', function (event) {
+  const trigger = event.relatedTarget;
+  const slideTo = trigger.getAttribute('data-bs-slide-to');
+  const carouselInstance = bootstrap.Carousel.getInstance(carousel) || new bootstrap.Carousel(carousel);
+  carouselInstance.to(parseInt(slideTo));
+});
+
+
 
 
 

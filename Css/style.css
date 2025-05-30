@@ -7,6 +7,7 @@
 body {
   background-color: #fff;
   overflow-x: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* logo */
@@ -329,14 +330,14 @@ body {
   z-index: 3;
 }
 
-/*Beginner friendly tutorials*/
+/*Beginner friendly tutorials for blog*/
 .my-image {
   width: 300px;
 }
 
 /*Diff btw HTML & HTML%*/
 .my-img {
-  width: 400px;
+  width: 300px;
 }
 
 
@@ -522,11 +523,6 @@ color: #1877F2;
   padding-right: 20px;
 }
 
-.my-gallery-card5 {
-  position: absolute;
-  top: 160px;
-  left: 200px;
-}
 
 .my-gallery-card5 {
   position: absolute;
@@ -536,8 +532,8 @@ color: #1877F2;
 
 .my-gallery-card6 {
   position: absolute;
-  top: 118px;
-  left: 200px;
+  top: 115px;
+  left: 195px;
 }
 
 .my-gallery-card8 {
@@ -552,37 +548,30 @@ color: #1877F2;
   left: 200px;
 }
 
-@media (max-width: 576px) {
-  .my-gallery-card5 {
-    position: absolute;
-    top: 145px;
-    left: 130px;
-  }
+.my-gallery-card11 {
+  position: absolute;
+  top: 160px;
+  left: 200px;
 }
 
-@media (max-width: 576px) {
-  .my-gallery-card6 {
-    position: absolute;
-    top: 108px;
-    left: 130px;
-  }
+.my-gallery-card12 {
+  position: absolute;
+  top: 109px;
+  left: 200px;
 }
 
-@media (max-width: 576px) {
-  .my-gallery-card8 {
-    position: absolute;
-    top: 148px;
-    left: 140px;
-  }
+.my-gallery-card14 {
+  position: absolute;
+  top: 169px;
+  left: 200px;
 }
 
-@media (max-width: 576px) {
-  .my-gallery-card9 {
-    position: absolute;
-    top: 145px;
-    left: 140px;
-  }
+.my-gallery-card15 {
+  position: absolute;
+  top: 115px;
+  left: 200px;
 }
+
 
 
 /*card img size in Explore*/
@@ -619,6 +608,21 @@ color: #1877F2;
 .my-img-top11 {
   position: absolute;
   top: -375px;
+}
+
+.my-img-top12 {
+  position: absolute;
+  top: -425px;
+}
+
+.my-img-top14 {
+  position: absolute;
+  top: -373px;
+}
+
+.my-img-top15 {
+  position: absolute;
+  top: -425px;
 }
 
 /*media querry*/
@@ -659,6 +663,7 @@ color: #1877F2;
 @media (max-width: 576px) {
   .my-img-top10 {
     position: relative;
+    
   }
 }
 
@@ -668,7 +673,159 @@ color: #1877F2;
     top: -2px;
   }
 }
+
+@media (max-width: 576px) {
+  .my-img-top12 {
+    position: relative;
+    top: -2px;
+  }
+}
+
+@media (max-width: 576px) {
+  .my-img-top14 {
+    position: relative;
+    top: -2px;
+  }
+}
+
+@media (max-width: 576px) {
+  .my-img-top15 {
+    position: relative;
+    top: -2px;
+  }
+}
+
+@media (max-width: 768px) {
+  .my-img-top5 {
+    position: relative;
+    top: -18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .my-img-top6 {
+    position: relative;
+    top: -18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .my-img-top6 {
+    position: relative;
+    top: -18px;
+  }
+}
+
+
 /*the large img when clicked on the card img*/
 .img-fluid {
   width: 600px;
+}
+
+
+/*healthy tech habits*/
+
+h2 {
+  font-size: 2rem;
+  border-bottom: 2px solid #1a3d7c;
+  padding-bottom: 0.3rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-top: 1.3rem;
+}
+
+a {
+  color: #1a3d7c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul,
+ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 2rem 0;
+}
+
+
+/* Cover page style */
+.cover {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.cover h1 {
+  font-size: 3rem;
+  margin-bottom: 0.2rem;
+}
+
+.cover h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+/* Table of Contents */
+nav#toc {
+  background: #d9e6f7;
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 8px rgba(26, 61, 124, 0.15);
+  margin-bottom: 3rem;
+}
+
+nav#toc ol {
+  padding-left: 1.2rem;
+}
+
+nav#toc li {
+  margin-bottom: 0.8rem;
+}
+
+/* media querry */
+@media (max-width: 600px) {
+  body {
+    padding: 0 1rem 2rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
+
+/* Healthy tech habits */
+.quick-tips {
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  color: #1a73e8;
+}
+
+.my-article article {
+  margin-top: 20vh;
 }
