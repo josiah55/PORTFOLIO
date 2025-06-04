@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Agency - Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/Css/styles.css" />
+</head>
+<body class="Mybody">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm my-navbar">
+    <div class="container my-container">
+      <a class="navbar-brand fw-bold" href="#">CreativeSpark</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto my-nav-link">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold">We Create Digital Experiences</h1>
+      <p class="lead">A creative agency for modern brands</p>
+      <a href="#contact" class="btn btn-light btn-lg mt-3">Get In Touch</a>
+    </div>
+  </header>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Services</h2>
+      <div class="row text-center g-4">
+        <div class="col-md-4">
+          <div class="card h-100 p-4 shadow-sm">
+            <h5 class="fw-bold">Web Design</h5>
+            <p>We build beautiful and responsive websites that convert.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 shadow-sm">
+            <h5 class="fw-bold">Brand Identity</h5>
+            <p>We help brands build unforgettable identities through design.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 shadow-sm">
+            <h5 class="fw-bold">Digital Marketing</h5>
+            <p>We strategize and execute digital campaigns that drive traffic.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Work</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <img src="assets/images/work1.jpg" class="img-fluid rounded shadow-sm" alt="Work 1">
+        </div>
+        <div class="col-md-4">
+          <img src="assets/images/work2.jpg" class="img-fluid rounded shadow-sm" alt="Work 2">
+        </div>
+        <div class="col-md-4">
+          <img src="assets/images/work3.jpg" class="img-fluid rounded shadow-sm" alt="Work 3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Meet Our Team</h2>
+      <div class="row text-center g-4">
+        <div class="col-md-3">
+          <div class="card shadow-sm p-3">
+            <img src="assets/images/team1.jpg" class="img-fluid rounded-circle mb-3" alt="Team 1">
+            <h5 class="fw-bold">Alex Stone</h5>
+            <p class="text-muted">CEO</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow-sm p-3">
+            <img src="assets/images/team2.jpg" class="img-fluid rounded-circle mb-3" alt="Team 2">
+            <h5 class="fw-bold">Lisa Ray</h5>
+            <p class="text-muted">Creative Director</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow-sm p-3">
+            <img src="assets/images/team3.jpg" class="img-fluid rounded-circle mb-3" alt="Team 3">
+            <h5 class="fw-bold">Mark Lee</h5>
+            <p class="text-muted">Developer</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow-sm p-3">
+            <img src="assets/images/team4.jpg" class="img-fluid rounded-circle mb-3" alt="Team 4">
+            <h5 class="fw-bold">Sarah Kim</h5>
+            <p class="text-muted">Designer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-primary text-white py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <form class="mx-auto" style="max-width: 600px;">
+        <div class="mb-3">
+          <label for="name" class="form-label text-muted">Full Name</label>
+          <input type="text" class="form-control" id="name" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label text-muted">Email</label>
+          <input type="email" class="form-control" id="email" required />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label text-muted">Message</label>
+          <textarea class="form-control" id="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-light w-100">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 My-Footer">
+    <div class="container">
+      &copy; 2025 CreativeSpark. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -794,22 +794,6 @@ nav#toc li {
   margin-bottom: 0.8rem;
 }
 
-/* media querry */
-@media (max-width: 600px) {
-  body {
-    padding: 0 1rem 2rem;
-  }
-
-  h1 {
-    font-size: 2.2rem;
-  }
-
-  h2 {
-    font-size: 1.6rem;
-  }
-}
-
-
 /* Healthy tech habits */
 .quick-tips {
   flex: 1;
@@ -825,4 +809,10 @@ h1 {
 
 .my-article article {
   margin-top: 20vh;
+}
+
+/* */
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }

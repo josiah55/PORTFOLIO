@@ -67,10 +67,80 @@ modal.addEventListener('show.bs.modal', function (event) {
 });
 
 
+//business starter Placeholder JS for form submission
+document.querySelector("form").addEventListener("submit", function (e) {
+  e.preventDefault();
+  alert("Thank you! We'll get back to you soon.");
+});
 
 
+//ecommerce shop
+document.addEventListener('DOMContentLoaded', () => {
+  const cartCount = document.getElementById('cart-count');
+  const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+  let cart = JSON.parse(localStorage.getItem('cart')) || {};
+
+  function updateCartCount() {
+    const totalItems = Object.values(cart).reduce((sum, item) => sum + item.quantity, 0);
+    cartCount.textContent = totalItems;
+    cartCount.style.display = totalItems > 0 ? 'inline-block' : 'none';
+  }
+
+  function saveCart() {
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }
+
+  function addToCart(product) {
+    const id = product.name; // Using name as key (you can add IDs later)
+    if (cart[id]) {
+      cart[id].quantity += 1;
+    } else {
+      cart[id] = {
+        name: product.name,
+        price: product.price,
+        quantity: 1,
+      };
+    }
+    saveCart();
+    updateCartCount();
+  }
+
+  addToCartButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const cardBody = button.closest('.card-body');
+      const name = cardBody.querySelector('.card-title').textContent.trim();
+      const priceText = cardBody.querySelector('.card-text.text-success').textContent.trim();
+      const price = parseFloat(priceText.replace(/[^0-9.-]+/g, ''));
+
+      addToCart({ name, price });
+      alert(`${name} has been added to your cart.`);
+    });
+  });
+
+  updateCartCount();
+});
 
 
+//Agency
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+
+const form = document.querySelector('form');
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  alert('✅ Thank you for contacting us! We will respond shortly.');
+  form.reset();
+});
 
 
 
