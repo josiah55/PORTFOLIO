@@ -29,13 +29,28 @@
         </li>
       </ul>
       <form class="d-flex me-2">
-        <input class="form-control me-2" type="search" placeholder="Search photos...">
+        <input class="form-control me-2" type="text" id="searchInput" placeholder="Search photos...">
         <button class="btn btn-outline-light" type="submit">Search</button>
       </form>
       <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginModal">Login/Signup</button>
     </div>
   </div>
 </nav>
+
+<section class="position-relative overflow-hidden" style="height: 100vh;">
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover">
+    <source src="/Videos/hero video1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Overlay Content -->
+  <div class="container h-100 d-flex flex-column justify-content-center align-items-center position-relative text-white text-center">
+    <h1 class="display-4 fw-bold text-white pt-5 mt-5">Welcome To Lensi Africa</h1>
+    <p class="lead text-primary text-white fs-2 fw-bold">African Photos At It's Peak</p>
+    <a href="#explore" class="btn btn-light text-black btn-lg mt-3 fw-bold">Explore</a>
+  </div>
+</section>
 
 
 <!-- Login/Signup Modal -->
@@ -64,7 +79,6 @@
     </div>
   </div>
 </div>
-
 
 
 <!-- About Section -->
@@ -113,12 +127,9 @@
     <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#natureModal">Nature</button>
     <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#businessModal">Business Moguls</button>
     <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#traditionModal">Tradition</button>
-    <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#celebritiesModal">Celebrities</button>
+    <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#celebritiesModal">Comedians</button>
   </div>
 </section>
-
-
-
 
 
 <!-- Pastors Modal with Nested Names -->
@@ -134,10 +145,10 @@
           <li class="list-group-item"><div><img src="/Images/Pastors/Pastor-Adeboye.jpg" alt="" class="Pastor"></div><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#pastorAdeboye"
           data-bs-dismiss="modal">Pastor E.A Adeboye</a></li>
 
-          <li class="list-group-item"><div><img src="/Images/Pastors/Papa Kumuyi-11.png" alt="" class="Pastor" ></div><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#pastorKumuyi"
+          <li class="list-group-item"><div><img src="/Images/Pastors/Papa Kumuyi-11.png" alt="" class="Pastor"></div><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#pastorKumuyi"
           data-bs-dismiss="modal">Pastor W.F Kumuyi</a></li>
 
-          <li class="list-group-item"><div><img src="" alt=""></div><a class="text-decoration-none" href="#" data-bs-toggle="modal"data-bs-target="#pastorChris" data-bs-dismiss="modal">Pastor Chris Oyakhilome</a></li>
+          <li class="list-group-item"><div><img src="/Images/Pastors/Pastor Chris6.jpg" alt="" class="Pastor"></div><a class="text-decoration-none" href="#" data-bs-toggle="modal"data-bs-target="#pastorChris" data-bs-dismiss="modal">Pastor Chris Oyakhilome</a></li>
 
           <li class="list-group-item"><div><img src="" alt=""></div><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#pastorSuleman"
           data-bs-dismiss="modal">Apostle Johnson Suleman</a></li>
@@ -247,9 +258,9 @@
       <div class="modal-body">
         <ul class="list-group">
           <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#musicianPhotosModal"
-              data-bs-dismiss="modal">Celebrities A</a></li>
+          data-bs-dismiss="modal">Comedians A</a></li>
           <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#musicianPhotosModal"
-          data-bs-dismiss="modal">Celebrities B</a></li>
+          data-bs-dismiss="modal">Comedians B</a></li>
         </ul>
       </div>
     </div>
@@ -292,6 +303,22 @@
             <img src="/Images/Pastors/PAPA-Adeboye-2.jpg" class="img-fluid rounded">
             <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
           </div>
+          <div class="col-md-4">
+            <img src="/Images/Pastors/Papa G.O.jpg" class="img-fluid rounded">
+            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+          </div>
+          <div class="col-md-4">
+            <img src="/Images/Pastors/Papa G.O4.jpg" class="img-fluid rounded">
+            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+          </div>
+          <div class="col-md-4">
+            <img src="/Images/Pastors/Papa G.O1.jpg" class="img-fluid rounded">
+            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+          </div>
+          <div class="col-md-4">
+            <img src="/Images/Pastors/Papa GO2.jpg" class="img-fluid rounded">
+            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+          </div>
           <!-- Add more images dynamically here -->
         </div>
       </div>
@@ -330,7 +357,23 @@
             <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100">Download</a>
           </div>
           <div class="col-md-4">
+            <img src="/Images/Pastors/Papa Kumuyi.jpg" class="img-fluid rounded">
+            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+          </div>
+          <div class="col-md-4">
             <img src="/Images/Pastors/Papa Kumuyi-9.webp" class="img-fluid rounded">
+            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+          </div>
+          <div class="col-md-4">
+            <img src="/Images/Pastors/Papa Kumuyi4.jpg" class="img-fluid rounded">
+            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+          </div>
+          <div class="col-md-4">
+            <img src="/Images/Pastors/Papa Kumuyi3.jpg" class="img-fluid rounded">
+            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+          </div>
+          <div class="col-md-4">
+            <img src="/Images/Pastors/Papa Kumuyi2.jpg" class="img-fluid rounded">
             <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
           </div>
           <!-- Add more images dynamically here -->
@@ -351,27 +394,43 @@
       <div class="modal-body">
         <div class="row g-3">
           <div class="col-md-4">
-            <img src="/Images/Pastors/Dad GO.jpg" class="img-fluid rounded">
+            <img src="/Images/Pastors/Pastor Chris.jpg" class="img-fluid rounded">
             <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/Daddy GO..jpg" class="img-fluid rounded">
+            <img src="/Images/Pastors/Pastor Chris1.jpg" class="img-fluid rounded">
             <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/Daddy GO1.jpg" class="img-fluid rounded">
+            <img src="/Images/Pastors/Pastor Chris2.jpg" class="img-fluid rounded">
             <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/Daddy GO2.webp" class="img-fluid rounded">
+            <img src="/Images/Pastors/Pastor Chris3.jpg" class="img-fluid rounded">
             <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100">Download</a>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/Daddy-Go.jpg" class="img-fluid rounded">
+            <img src="/Images/Pastors/Pastor Chris6.jpg" class="img-fluid rounded">
             <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100">Download</a>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/PAPA-Adeboye-2.jpg" class="img-fluid rounded">
+            <img src="/Images/Pastors/Pastor Chris7.jpg" class="img-fluid rounded">
+            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+          </div>
+          <div class="col-md-4">
+            <img src="/Images/Pastors/Pastor Chris4.jpg" class="img-fluid rounded">
+            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+          </div>
+          <div class="col-md-4">
+            <img src="/Images/Pastors/Pastor Chris5.jpg" class="img-fluid rounded">
+            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+          </div>
+          <div class="col-md-4">
+            <img src="/Images/Pastors/Pastor Chris9.jpg" class="img-fluid rounded">
+            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+          </div>
+          <div class="col-md-4">
+            <img src="/Images/Pastors/Pastor Chris10.jpg" class="img-fluid rounded">
             <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
           </div>
           <!-- Add more images dynamically here -->
@@ -571,316 +630,1300 @@
 
 <!-- Cards Gallery Featured Photos -->
 <section class="container my-5">
-  <h3 class="mb-4 text-center">Featured Photos</h3>
-  <div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col-md-4">
-      <div class="card border-0">
-        <img src="/Images/featured photo1.jpg" class="card-img-top" alt="" data-bs-toggle="modal" data-bs-target="#imageModal1">
-        <div class="my-gallery-card">
-          <h5 class="card-title text-white">Image Title</h5>
-          <a href="/Images/featured photo1.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
-        </div>
-      </div>
-      
-      <!-- Modal for Larger Image -->
-      <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content bg-transparent border-0">
-            <div class="modal-body text-center p-0">
-              <img src="/Images/featured photo1.jpg" class="img-fluid rounded" alt="Large View">
+  <div id="myCarouselWrapper">
+  <h3 class="mb-4 pt-4 text-center">Featured Photos</h3>
+  <div id="groupCarousel" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">            <!--Group 1-->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/featured photo1.jpg" class="card-img-top my-img-top1" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal1">
+              <div class="my-gallery-card" id="my-imgcard1">
+                <h5 class="card-title text-white fw-bold">People</h5>
+                <a href="/Images/featured photo1.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/featured photo1.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/featured photo2.jpg" class="card-img-top my-img-top2" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal2">
+              <div class="my-gallery-card">
+                <h5 class="card-title text-white fw-bold">Nature</h5>
+                <a href="/Images/featured photo2.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/featured photo2.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/featured photo3.jpg" class="card-img-top my-img-top3" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal3">
+              <div class="my-gallery-card">
+                <h5 class="card-title text-white fw-bold">Mother</h5>
+                <a href="/Images/featured photo3.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal3" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/featured photo3.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/featured photo4.jpg" class="card-img-top my-img-top4" alt="" data-bs-toggle="modal" data-bs-target="#imageModal4">
+              <div class="my-gallery-card">
+                <h5 class="card-title text-white fw-bold">Nature</h5>
+                <a href="/Images/featured photo4.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal4" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/featured photo4.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/featured photo5.jpg" class="card-img-top my-img-top5" alt="" data-bs-toggle="modal" data-bs-target="#imageModal5">
+              <div class="my-gallery-card5">
+                <h5 class="card-title text-white fw-bold">Fabrics</h5>
+                <a href="/Images/featured photo5.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal5" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/featured photo5.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/featured photo6.jpg" class="card-img-top my-img-top6" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal6">
+              <div class="my-gallery-card6">
+                <h5 class="card-title text-white fw-bold">People</h5>
+                <a href="/Images/featured photo6.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal6" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/featured photo6.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/feature photo7.jpg" class="card-img-top7 my-img-top7" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal7">
+              <div class="my-gallery-card" id="my-imgcard7">
+                <h5 class="card-title text-white">Children</h5>
+                <a href="/Images/feature photo7.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal7" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/feature photo7.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/feature photo8.jpg" class="card-img-top my-img-top8" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal8">
+              <div class="my-gallery-card8">
+                <h5 class="card-title text-white fw-bold">People</h5>
+                <a href="/Images/feature photo8.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal8" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/feature photo8.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/feature photo9.jpg" class="card-img-top my-img-top9" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal9">
+              <div class="my-gallery-card9">
+                <h5 class="card-title text-white fw-bold">Animals</h5>
+                <a href="/Images/feature photo9.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal9" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/feature photo9.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/feature photo10.jpg" class="card-img-top my-img-top10" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal10">
+              <div class="my-gallery-card" id="my-imgcard10">
+                <h5 class="card-title text-white fw-bold">Elephants</h5>
+                <a href="/Images/feature photo10.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal10" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/feature photo10.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/feature photo11.jpg" class="card-img-top my-img-top11" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal11">
+              <div class="my-gallery-card11">
+                <h5 class="card-title text-white fw-bold">Children</h5>
+                <a href="/Images/feature photo11.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal11" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/feature photo11.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/nature1.jpg" class="card-img-top my-img-top12" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal12">
+              <div class="my-gallery-card12">
+                <h5 class="card-title text-white">Nature</h5>
+                <a href="/Images/nature1.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal12" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/nature1.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/woman2.jpg" class="card-img-top my-img-top13" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal13">
+              <div class="my-gallery-card" id="my-imgcard13">
+                <h5 class="card-title text-white">Woman</h5>
+                <a href="/Images/woman2.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal13" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/woman2.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/woman tradition1.jpg" class="card-img-top my-img-top14" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal14">
+              <div class="my-gallery-card14">
+                <h5 class="card-title text-white">Mother</h5>
+                <a href="/Images/woman tradition1.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal14" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/woman tradition1.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/woman tradition.jpg" class="card-img-top my-img-top15" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal15">
+              <div class="my-gallery-card15">
+                <h5 class="card-title text-white">Tradition</h5>
+                <a href="/Images/woman tradition.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal15" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/woman tradition.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- More cards can be added here -->
+        </div>
+      </div>
+      <div class="carousel-item">                     <!--Group 2-->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/Child Lensi Africa.jpg" class="card-img-top my-img-top16" alt="" data-bs-toggle="modal" data-bs-target="#imageModal16">
+              <div class="my-gallery-card" id="my-imgcard16">
+                <h5 class="card-title text-white fw-bold">People</h5>
+                <a href="/Images/featured photo1.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal16" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/Child Lensi Africa.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/Children Lensi Africa.jpg" class="card-img-top my-img-card17" alt="" data-bs-toggle="modal" data-bs-target="#imageModal17">
+              <div class="my-gallery-card" id="my-imgcard17">
+                <h5 class="card-title text-white fw-bold">Nature</h5>
+                <a href="/Images/featured photo2.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal17" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/Children Lensi Africa.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/Horse Lensi Africa.jpg" class="card-img-top my-img-top18" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal18">
+              <div class="my-gallery-card" id="my-imgcard18">
+                <h5 class="card-title text-white fw-bold">Mother</h5>
+                <a href="/Images/featured photo3.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal18" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/Horse Lensi Africa.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/Image Lensi Africa.jpg" class="card-img-top my-img-top19" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal19">
+              <div class="my-gallery-card" id="my-imgcard19">
+                <h5 class="card-title text-white fw-bold">Nature</h5>
+                <a href="/Images/featured photo4.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal19" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/Image Lensi Africa.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/Kids Lensi Africa.jpg" class="card-img-top my-img-top20" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal20">
+              <div class="my-gallery-card20">
+                <h5 class="card-title text-white fw-bold">Fabrics</h5>
+                <a href="/Images/featured photo5.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal20" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/Kids Lensi Africa.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/Land Lensi Africa.jpg" class="card-img-top my-img-top21" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal21">
+              <div class="my-gallery-card21">
+                <h5 class="card-title text-white fw-bold">People</h5>
+                <a href="/Images/featured photo6.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal21" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/Land Lensi Africa.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/Lion Lensi Africa.jpg" class="card-img-top7 my-img-top22" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal22">
+              <div class="my-gallery-card" id="my-imgcard22">
+                <h5 class="card-title text-white">Children</h5>
+                <a href="/Images/feature photo7.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal22" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/Lion Lensi Africa.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/Lion-Lioness Lensi Africa.jpg" class="card-img-top my-img-top23" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal23">
+              <div class="my-gallery-card23">
+                <h5 class="card-title text-white fw-bold">People</h5>
+                <a href="/Images/feature photo8.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal23" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/Lion-Lioness Lensi Africa.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/Masqurade Lensi Africa.jpg" class="card-img-top my-img-top24" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal24">
+              <div class="my-gallery-card24">
+                <h5 class="card-title text-white fw-bold">Animals</h5>
+                <a href="/Images/feature photo9.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal24" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/Masqurade Lensi Africa.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/Monkey Lensi Africa.jpg" class="card-img-top my-img-top25" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal25">
+              <div class="my-gallery-card" id="my-imgcard25">
+                <h5 class="card-title text-white fw-bold">Elephants</h5>
+                <a href="/Images/feature photo10.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal25" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/Monkey Lensi Africa.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/Ostrich Lensi Africa.jpg" class="card-img-top my-img-top26" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal26">
+              <div class="my-gallery-card26">
+                <h5 class="card-title text-white fw-bold">Children</h5>
+                <a href="/Images/feature photo11.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal26" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/Ostrich Lensi Africa.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/Palm Tree Lensi Africa.jpg" class="card-img-top my-img-top27" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal27">
+              <div class="my-gallery-card27">
+                <h5 class="card-title text-white">Nature</h5>
+                <a href="/Images/nature1.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal27" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/Palm Tree Lensi Africa.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/Students Lensi Africa.jpg" class="card-img-top my-img-top28" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal28">
+              <div class="my-gallery-card" id="my-imgcard28">
+                <h5 class="card-title text-white">Woman</h5>
+                <a href="/Images/woman2.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal28" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/Students Lensi Africa.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/Women Lensi Africa.jpg" class="card-img-top my-img-top29" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal29">
+              <div class="my-gallery-card29">
+                <h5 class="card-title text-white">Mother</h5>
+                <a href="/Images/woman tradition1.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal29" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/Women Lensi Africa.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/Kids-Lensi Africa.jpg" class="card-img-top my-img-top30" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal30">
+              <div class="my-gallery-card30">
+                <h5 class="card-title text-white">Tradition</h5>
+                <a href="/Images/woman tradition.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal30" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/Kids-Lensi Africa.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- More cards can be added here -->
+        </div>
+      </div>
+      <div class="carousel-item"> <!--Group 3-->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/featured photo1.jpg" class="card-img-top" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal1">
+              <div class="my-gallery-card" id="my-imgcard1">
+                <h5 class="card-title text-white fw-bold">People</h5>
+                <a href="/Images/featured photo1.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/featured photo1.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/featured photo2.jpg" class="card-img-top" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal2">
+              <div class="my-gallery-card">
+                <h5 class="card-title text-white fw-bold">Nature</h5>
+                <a href="/Images/featured photo2.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/featured photo2.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/featured photo3.jpg" class="card-img-top my-img-top3" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal3">
+              <div class="my-gallery-card">
+                <h5 class="card-title text-white fw-bold">Mother</h5>
+                <a href="/Images/featured photo3.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal3" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/featured photo3.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/featured photo4.jpg" class="card-img-top my-img-top4" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal4">
+              <div class="my-gallery-card">
+                <h5 class="card-title text-white fw-bold">Nature</h5>
+                <a href="/Images/featured photo4.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal4" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/featured photo4.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/featured photo5.jpg" class="card-img-top my-img-top5" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal5">
+              <div class="my-gallery-card5">
+                <h5 class="card-title text-white fw-bold">Fabrics</h5>
+                <a href="/Images/featured photo5.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal5" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/featured photo5.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/featured photo6.jpg" class="card-img-top my-img-top6" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal6">
+              <div class="my-gallery-card6">
+                <h5 class="card-title text-white fw-bold">People</h5>
+                <a href="/Images/featured photo6.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal6" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/featured photo6.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/feature photo7.jpg" class="card-img-top7 my-img-top7" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal7">
+              <div class="my-gallery-card" id="my-imgcard7">
+                <h5 class="card-title text-white">Children</h5>
+                <a href="/Images/feature photo7.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal7" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/feature photo7.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/feature photo8.jpg" class="card-img-top my-img-top8" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal8">
+              <div class="my-gallery-card8">
+                <h5 class="card-title text-white fw-bold">People</h5>
+                <a href="/Images/feature photo8.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal8" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/feature photo8.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/feature photo9.jpg" class="card-img-top my-img-top9" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal9">
+              <div class="my-gallery-card9">
+                <h5 class="card-title text-white fw-bold">Animals</h5>
+                <a href="/Images/feature photo9.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal9" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/feature photo9.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/feature photo10.jpg" class="card-img-top my-img-top10" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal10">
+              <div class="my-gallery-card" id="my-imgcard10">
+                <h5 class="card-title text-white fw-bold">Elephants</h5>
+                <a href="/Images/feature photo10.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal10" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/feature photo10.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/feature photo11.jpg" class="card-img-top my-img-top11" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal11">
+              <div class="my-gallery-card11">
+                <h5 class="card-title text-white fw-bold">Children</h5>
+                <a href="/Images/feature photo11.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal11" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/feature photo11.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/nature1.jpg" class="card-img-top my-img-top12" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal12">
+              <div class="my-gallery-card12">
+                <h5 class="card-title text-white">Nature</h5>
+                <a href="/Images/nature1.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal12" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/nature1.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/woman2.jpg" class="card-img-top my-img-top13" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal13">
+              <div class="my-gallery-card" id="my-imgcard13">
+                <h5 class="card-title text-white">Woman</h5>
+                <a href="/Images/woman2.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal13" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/woman2.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/woman tradition1.jpg" class="card-img-top my-img-top14" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal14">
+              <div class="my-gallery-card14">
+                <h5 class="card-title text-white">Mother</h5>
+                <a href="/Images/woman tradition1.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal14" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/woman tradition1.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/woman tradition.jpg" class="card-img-top my-img-top15" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal15">
+              <div class="my-gallery-card15">
+                <h5 class="card-title text-white">Tradition</h5>
+                <a href="/Images/woman tradition.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal15" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/woman tradition.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- More cards can be added here -->
+        </div>
+      </div>
+      <div class="carousel-item">                           <!--Group 4-->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/featured photo1.jpg" class="card-img-top" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal1">
+              <div class="my-gallery-card" id="my-imgcard1">
+                <h5 class="card-title text-white fw-bold">People</h5>
+                <a href="/Images/featured photo1.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/featured photo1.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/featured photo2.jpg" class="card-img-top" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal2">
+              <div class="my-gallery-card">
+                <h5 class="card-title text-white fw-bold">Nature</h5>
+                <a href="/Images/featured photo2.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/featured photo2.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/featured photo3.jpg" class="card-img-top my-img-top3" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal3">
+              <div class="my-gallery-card">
+                <h5 class="card-title text-white fw-bold">Mother</h5>
+                <a href="/Images/featured photo3.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal3" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/featured photo3.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/featured photo4.jpg" class="card-img-top my-img-top4" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal4">
+              <div class="my-gallery-card">
+                <h5 class="card-title text-white fw-bold">Nature</h5>
+                <a href="/Images/featured photo4.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal4" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/featured photo4.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/featured photo5.jpg" class="card-img-top my-img-top5" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal5">
+              <div class="my-gallery-card5">
+                <h5 class="card-title text-white fw-bold">Fabrics</h5>
+                <a href="/Images/featured photo5.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal5" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/featured photo5.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/featured photo6.jpg" class="card-img-top my-img-top6" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal6">
+              <div class="my-gallery-card6">
+                <h5 class="card-title text-white fw-bold">People</h5>
+                <a href="/Images/featured photo6.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal6" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/featured photo6.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/feature photo7.jpg" class="card-img-top7 my-img-top7" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal7">
+              <div class="my-gallery-card" id="my-imgcard7">
+                <h5 class="card-title text-white">Children</h5>
+                <a href="/Images/feature photo7.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal7" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/feature photo7.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/feature photo8.jpg" class="card-img-top my-img-top8" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal8">
+              <div class="my-gallery-card8">
+                <h5 class="card-title text-white fw-bold">People</h5>
+                <a href="/Images/feature photo8.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal8" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/feature photo8.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/feature photo9.jpg" class="card-img-top my-img-top9" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal9">
+              <div class="my-gallery-card9">
+                <h5 class="card-title text-white fw-bold">Animals</h5>
+                <a href="/Images/feature photo9.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal9" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/feature photo9.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/feature photo10.jpg" class="card-img-top my-img-top10" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal10">
+              <div class="my-gallery-card" id="my-imgcard10">
+                <h5 class="card-title text-white fw-bold">Elephants</h5>
+                <a href="/Images/feature photo10.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal10" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/feature photo10.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/feature photo11.jpg" class="card-img-top my-img-top11" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal11">
+              <div class="my-gallery-card11">
+                <h5 class="card-title text-white fw-bold">Children</h5>
+                <a href="/Images/feature photo11.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal11" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/feature photo11.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/nature1.jpg" class="card-img-top my-img-top12" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal12">
+              <div class="my-gallery-card12">
+                <h5 class="card-title text-white">Nature</h5>
+                <a href="/Images/nature1.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal12" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/nature1.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/woman2.jpg" class="card-img-top my-img-top13" alt="" data-bs-toggle="modal" data-bs-target="#imageModal13">
+              <div class="my-gallery-card" id="my-imgcard13">
+                <h5 class="card-title text-white">Woman</h5>
+                <a href="/Images/woman2.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal13" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/woman2.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/woman tradition1.jpg" class="card-img-top my-img-top14" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal14">
+              <div class="my-gallery-card14">
+                <h5 class="card-title text-white">Mother</h5>
+                <a href="/Images/woman tradition1.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal14" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/woman tradition1.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="/Images/woman tradition.jpg" class="card-img-top my-img-top15" alt="" data-bs-toggle="modal"
+                data-bs-target="#imageModal15">
+              <div class="my-gallery-card15">
+                <h5 class="card-title text-white">Tradition</h5>
+                <a href="/Images/woman tradition.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+              </div>
+            </div>
+          
+            <!-- Modal for Larger Image -->
+            <div class="modal fade" id="imageModal15" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                  <div class="modal-body text-center p-0">
+                    <img src="/Images/woman tradition.jpg" class="img-fluid rounded" alt="Large View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- More cards can be added here -->
         </div>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="card border-0">
-        <img src="/Images/featured photo2.jpg" class="card-img-top" alt="" data-bs-toggle="modal" data-bs-target="#imageModal2">
-        <div class="my-gallery-card">
-          <h5 class="card-title text-white">Image Title</h5>
-          <a href="/Images/featured photo2.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
-        </div>
-      </div>
-    
-      <!-- Modal for Larger Image -->
-      <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content bg-transparent border-0">
-            <div class="modal-body text-center p-0">
-              <img src="/Images/featured photo2.jpg" class="img-fluid rounded" alt="Large View">
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="text-center pt-5 mt-5">
+      <button id="prevBtn" class="btn btn-dark me-2" type="button" data-bs-target="#groupCarousel" data-bs-slide="prev">‹ Previous
+      </button>
+      <button id="nextBtn" class="btn btn-dark" type="button" data-bs-target="#groupCarousel" data-bs-slide="next">Next ›
+      </button>
     </div>
-    <div class="col-md-4">
-      <div class="card border-0">
-        <img src="/Images/featured photo3.jpg" class="card-img-top" alt="" data-bs-toggle="modal" data-bs-target="#imageModal3">
-        <div class="my-gallery-card">
-          <h5 class="card-title text-white">Image Title</h5>
-          <a href="/Images/featured photo3.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
-        </div>
-      </div>
-    
-      <!-- Modal for Larger Image -->
-      <div class="modal fade" id="imageModal3" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content bg-transparent border-0">
-            <div class="modal-body text-center p-0">
-              <img src="/Images/featured photo3.jpg" class="img-fluid rounded" alt="Large View">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card border-0">
-        <img src="/Images/featured photo4.jpg" class="card-img-top" alt="" data-bs-toggle="modal" data-bs-target="#imageModal4">
-        <div class="my-gallery-card">
-          <h5 class="card-title text-white">Image Title</h5>
-          <a href="/Images/featured photo4.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
-        </div>
-      </div>
-    
-      <!-- Modal for Larger Image -->
-      <div class="modal fade" id="imageModal4" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content bg-transparent border-0">
-            <div class="modal-body text-center p-0">
-              <img src="/Images/featured photo4.jpg" class="img-fluid rounded" alt="Large View">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card border-0">
-        <img src="/Images/featured photo5.jpg" class="card-img-top my-img-top5" alt="" data-bs-toggle="modal" data-bs-target="#imageModal5">
-        <div class="my-gallery-card5">
-          <h5 class="card-title text-white">Image Title</h5>
-          <a href="/Images/featured photo5.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
-        </div>
-      </div>
-    
-      <!-- Modal for Larger Image -->
-      <div class="modal fade" id="imageModal5" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content bg-transparent border-0">
-            <div class="modal-body text-center p-0">
-              <img src="/Images/featured photo5.jpg" class="img-fluid rounded" alt="Large View">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card border-0">
-        <img src="/Images/featured photo6.jpg" class="card-img-top my-img-top6" alt="" data-bs-toggle="modal" data-bs-target="#imageModal6">
-        <div class="my-gallery-card6">
-          <h5 class="card-title text-white">Image Title</h5>
-          <a href="/Images/featured photo6.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
-        </div>
-      </div>
-    
-      <!-- Modal for Larger Image -->
-      <div class="modal fade" id="imageModal6" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content bg-transparent border-0">
-            <div class="modal-body text-center p-0">
-              <img src="/Images/featured photo6.jpg" class="img-fluid rounded" alt="Large View">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card border-0">
-        <img src="/Images/feature photo7.jpg" class="card-img-top7" alt="" data-bs-toggle="modal" data-bs-target="#imageModal7">
-        <div class="my-gallery-card">
-          <h5 class="card-title text-white">Image Title</h5>
-          <a href="/Images/feature photo7.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
-        </div>
-      </div>
-    
-      <!-- Modal for Larger Image -->
-      <div class="modal fade" id="imageModal7" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content bg-transparent border-0">
-            <div class="modal-body text-center p-0">
-              <img src="/Images/feature photo7.jpg" class="img-fluid rounded" alt="Large View">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card border-0">
-        <img src="/Images/feature photo8.jpg" class="card-img-top my-img-top8" alt="" data-bs-toggle="modal" data-bs-target="#imageModal8">
-        <div class="my-gallery-card8">
-          <h5 class="card-title text-white">Image Title</h5>
-          <a href="/Images/feature photo8.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
-        </div>
-      </div>
-    
-      <!-- Modal for Larger Image -->
-      <div class="modal fade" id="imageModal8" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content bg-transparent border-0">
-            <div class="modal-body text-center p-0">
-              <img src="/Images/feature photo8.jpg" class="img-fluid rounded" alt="Large View">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card border-0">
-        <img src="/Images/feature photo9.jpg" class="card-img-top my-img-top9" alt="" data-bs-toggle="modal" data-bs-target="#imageModal9">
-        <div class="my-gallery-card9">
-          <h5 class="card-title text-white">Image Title</h5>
-          <a href="/Images/feature photo9.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
-        </div>
-      </div>
-    
-      <!-- Modal for Larger Image -->
-      <div class="modal fade" id="imageModal9" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content bg-transparent border-0">
-            <div class="modal-body text-center p-0">
-              <img src="/Images/feature photo9.jpg" class="img-fluid rounded" alt="Large View">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card border-0">
-        <img src="/Images/feature photo10.jpg" class="card-img-top" alt="" data-bs-toggle="modal" data-bs-target="#imageModal10">
-        <div class="my-gallery-card">
-          <h5 class="card-title text-white">Image Title</h5>
-          <a href="/Images/feature photo10.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
-        </div>
-      </div>
-    
-      <!-- Modal for Larger Image -->
-      <div class="modal fade" id="imageModal10" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content bg-transparent border-0">
-            <div class="modal-body text-center p-0">
-              <img src="/Images/feature photo10.jpg" class="img-fluid rounded" alt="Large View">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card border-0">
-        <img src="/Images/feature photo11.jpg" class="card-img-top my-img-top11" alt="" data-bs-toggle="modal" data-bs-target="#imageModal11">
-        <div class="my-gallery-card11">
-          <h5 class="card-title text-white">Image Title</h5>
-          <a href="/Images/feature photo11.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
-        </div>
-      </div>
-    
-      <!-- Modal for Larger Image -->
-      <div class="modal fade" id="imageModal11" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content bg-transparent border-0">
-            <div class="modal-body text-center p-0">
-              <img src="/Images/feature photo11.jpg" class="img-fluid rounded" alt="Large View">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card border-0">
-        <img src="/Images/nature1.jpg" class="card-img-top my-img-top12" alt="" data-bs-toggle="modal" data-bs-target="#imageModal12">
-        <div class="my-gallery-card12">
-          <h5 class="card-title text-white">Image Title</h5>
-          <a href="/Images/nature1.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
-        </div>
-      </div>
-    
-      <!-- Modal for Larger Image -->
-      <div class="modal fade" id="imageModal12" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content bg-transparent border-0">
-            <div class="modal-body text-center p-0">
-              <img src="/Images/nature1.jpg" class="img-fluid rounded" alt="Large View">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card border-0">
-        <img src="/Images/woman2.jpg" class="card-img-top" alt="" data-bs-toggle="modal" data-bs-target="#imageModal13">
-        <div class="my-gallery-card">
-          <h5 class="card-title text-white">Image Title</h5>
-          <a href="/Images/woman2.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
-        </div>
-      </div>
-    
-      <!-- Modal for Larger Image -->
-      <div class="modal fade" id="imageModal13" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content bg-transparent border-0">
-            <div class="modal-body text-center p-0">
-              <img src="/Images/woman2.jpg" class="img-fluid rounded" alt="Large View">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card border-0">
-        <img src="/Images/woman tradition1.jpg" class="card-img-top my-img-top14" alt="" data-bs-toggle="modal" data-bs-target="#imageModal14">
-        <div class="my-gallery-card14">
-          <h5 class="card-title text-white">Image Title</h5>
-          <a href="/Images/woman tradition1.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
-        </div>
-      </div>
-    
-      <!-- Modal for Larger Image -->
-      <div class="modal fade" id="imageModal14" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content bg-transparent border-0">
-            <div class="modal-body text-center p-0">
-              <img src="/Images/woman tradition1.jpg" class="img-fluid rounded" alt="Large View">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card border-0">
-        <img src="/Images/woman tradition.jpg" class="card-img-top my-img-top15" alt="" data-bs-toggle="modal"
-          data-bs-target="#imageModal15">
-        <div class="my-gallery-card15">
-          <h5 class="card-title text-white">Image Title</h5>
-          <a href="/Images/woman tradition.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
-        </div>
-      </div>
-    
-      <!-- Modal for Larger Image -->
-      <div class="modal fade" id="imageModal15" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content bg-transparent border-0">
-            <div class="modal-body text-center p-0">
-              <img src="/Images/woman tradition.jpg" class="img-fluid rounded" alt="Large View">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- More cards can be added here -->
+  </div>
+</div>
 </section>
+
   
-  <hr/>
 <!--upload your photo-->
-<section class="container my-5 pt-5 my_container">
-  <h2 class="text-center mb-4">Upload Your Photo</h2>
+<section class="container pt-5 my-5 my_container">
+  <h2 class="text-center pt-4 mb-4">Upload Your Photo</h2>
   <form id="uploadForm" enctype="multipart/form-data">
     <div class="mb-3">
       <label for="photoTitle" class="form-label">Photo Title</label>
@@ -909,10 +1952,7 @@
       <!-- About Section -->
       <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
         <h5 class="text-uppercase mb-4 fw-bold text-warning">About Gallery</h5>
-        <p>
-          Discover Africa through powerful imagery. From culture and nature to iconic personalities, our gallery
-          captures the vibrant spirit of the continent.
-        </p>
+        <p>Discover Africa through powerful imagery. From culture and nature to iconic    personalities, our gallery captures the vibrant spirit of the continent.</p>
       </div>
 
       <!-- Quick Links -->
@@ -932,12 +1972,12 @@
       </div>
 
       <!-- Social Media -->
-      <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3">
+      <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3" id="footer-icons">
         <h5 class="text-uppercase mb-4 fw-bold text-warning">Follow Us</h5>
-        <a href="#" class="text-white me-4"><i class="bi bi-facebook text-white"></i></a>
-        <a href="#" class="text-white me-4"><i class="bi bi-twitter text-white"></i></a>
-        <a href="#" class="text-white me-4"><i class="bi bi-instagram text-white"></i></a>
-        <a href="#" class="text-white me-4"><i class="bi bi-youtube text-white"></i></a>
+        <a href="#" class="text-white me-4"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-4"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-white me-4"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white me-4"><i class="bi bi-youtube text-danger"></i></a>
       </div>
     </div>
 
@@ -950,21 +1990,10 @@
   </div>
 </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src="/Script/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="/Script/button.js"></script>
   </body>
   </html>
-
-
-
-
-
-
-
-
-
-
 
 
 

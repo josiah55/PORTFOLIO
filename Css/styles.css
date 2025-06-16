@@ -1,5 +1,5 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 section {
@@ -87,7 +87,6 @@ section#products .card:hover {
     text-decoration: none;
 }
 
-/* Navbar */
 .my-navbar {
     padding: 1rem 0;
 }
@@ -106,7 +105,6 @@ section#products .card:hover {
     color: #0d6efd;
 }
 
-/* Hero Section */
 #home {
     background: linear-gradient(120deg, #0d6efd, #0b5ed7);
     color: white;
@@ -115,7 +113,7 @@ section#products .card:hover {
 }
 
 #home h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
@@ -123,7 +121,6 @@ section#products .card:hover {
     font-size: 1.2rem;
 }
 
-/* Services */
 #services {
     background-color: #f9f9f9;
 }
@@ -132,12 +129,10 @@ section#products .card:hover {
     font-weight: 600;
 }
 
-/* portfolio Section */
 #portfolio img {
     border-radius: 12px;
 }
 
-/* Contact Section */
 #contact form {
     background-color: #fff;
     padding: 2rem;
@@ -150,9 +145,70 @@ section#products .card:hover {
     border-radius: 6px;
 }
 
-/* Footer */
 .My-Footer {
     background-color: #212529;
     color: #fff;
     padding: 1rem 0;
+}
+
+/* Resume template */
+.My-resume{
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.resume {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #007bff;
+}
+
+/* Tech blog */
+.Body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+article h2:hover {
+    color: #0d6efd;
+    cursor: pointer;
+}
+
+aside h5 {
+    font-weight: 600;
+    border-bottom: 2px solid #0d6efd;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.MyFooter p {
+    margin: 0;
+}
+
+#newsletterMessage {
+    font-size: 0.9rem;
+}
+
+/* media query */
+@media (max-width: 991px) {
+    main.row {
+        flex-direction: column;
+    }
+
+    aside {
+        margin-top: 2rem;
+    }
 }
