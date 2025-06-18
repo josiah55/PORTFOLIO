@@ -19,7 +19,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav me-auto">
+      <ul class="navbar-nav me-auto pt-3">
         <li class="nav-item"><a class="nav-link text-light" href="/index.html">Home</a></li>
         <li class="nav-item">
           <a class="nav-link text-light" href="/Html/blog.html">Blog</a>
@@ -48,7 +48,7 @@
   <div class="container h-100 d-flex flex-column justify-content-center align-items-center position-relative text-white text-center">
     <h1 class="display-4 fw-bold text-white pt-5 mt-5">Discover Africa Through Photos</h1>
     <p class="lead text-primary text-white fs-2 fw-bold">Explore culture, beauty, and stories of Africa captured in stunning visuals.</p>
-    <a href="#explore" class="btn btn-light text-black btn-lg mt-3 fw-bold">Explore Galleries</a>
+    <a href="#explore" class="btn btn-light text-black btn-lg mt-3 fw-bold">Explore Categories</a>
   </div>
 </section>
 
@@ -113,7 +113,7 @@
       <div class="col">
         <div class="card gallery-card">
           <a href="/Html/afrovista.html">
-          <img src="/Images/Techie.jpg" class="card-img-top" alt="...">
+          <img src="/Images/Techie.jpg" class="card-img-top" alt="Card">
           <div class="card-body">
             <h5 class="card-title">Afrovista</h5>
             <span class="text-muted">35 images</span>
@@ -1392,7 +1392,7 @@
           <!-- More cards can be added here -->
         </div>
       </div>
-      <div class="carousel-item"> <!--Group 3-->
+      <div class="carousel-item">                       <!--Group 3-->
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col-md-4">
             <div class="card border-0">
@@ -2033,6 +2033,75 @@
     </div>
   </div>
 </div>
+</section>
+
+<!--More Categories-->
+<section class="container pt-5 mt-5">
+  <div class="row g-4 pt-5">
+    <div class="col-md-2">
+      <h3 class="text-muted">More Categories <img class="ICON" src="/Images/ICON.png" alt=""></h3>
+    </div>
+    <!-- Card 1 -->
+    <div class="col-sm-3">
+      <div class="card w-100 shadow-sm" style="max-width: 250px;" onclick="toggleGallery('gallery1')">
+        <img src="/Images/Technoloy_.jpg" class="card-img-top" alt="Gallery 1">
+        <div class="card-body text-center">
+          <h5 class="card-title">Technology</h5>
+        </div>
+      </div>
+  
+      <!-- Gallery 1 -->
+      <div id="gallery1" class="row mt-3 d-none">
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 1">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Card 2 -->
+    <div class="col-sm-3">
+      <div class="card w-100 shadow-sm" style="max-width: 250px;" onclick="toggleGallery('gallery2')">
+        <img src="/Images/Food_Lifestyle.jpg" class="card-img-top" alt="Gallery 2">
+        <div class="card-body text-center">
+          <h5 class="card-title">Food & Lifestyle</h5>
+        </div>
+      </div>
+  
+      <!-- Gallery 2 -->
+      <div id="gallery2" class="row mt-3 d-none">
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Wildlife 1">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Wildlife 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Card 3 -->
+    <div class="col-sm-3">
+      <div class="card w-100 shadow-sm" style="max-width: 280px;" onclick="toggleGallery('gallery3')">
+        <img src="/Images/Architecture.jpg" class="card-img-top" alt="Gallery 3">
+        <div class="card-body text-center">
+          <h5 class="card-title">Architecture & Land</h5>
+        </div>
+      </div>
+  
+      <!-- Gallery 3 -->
+      <div id="gallery3" class="row mt-3 d-none">
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Modern 1">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Modern 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
 </section>
   
 <!--upload your photo-->

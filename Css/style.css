@@ -3391,6 +3391,11 @@ body {
   width: 600px;
 }
 
+/* More Categories*/
+.ICON {
+  width: 30px;
+}
+
 /* photo upload */
 .uploaded-photo {
   max-width: 200px;

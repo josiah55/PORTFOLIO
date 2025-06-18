@@ -80,9 +80,6 @@
   };
 
 
-
-
-
 //search bar for photos on the AfricaVista
 const searchInput = document.getElementById('searchInput');
 const itemList = document.getElementById('explore');
@@ -110,7 +107,14 @@ const carouselElement = document.getElementById('groupCarousel');
   });
 
 
-// uploaded photos
+//More Categories
+function toggleGallery(id) {
+  const gallery = document.getElementById(id);
+  gallery.classList.toggle('d-none');
+}  
+
+
+// This is for the uploaded photos
 const uploadForm = document.getElementById('uploadForm');
 const photoUpload = document.getElementById('photoUpload');
 const photoTitle = document.getElementById('photoTitle');
