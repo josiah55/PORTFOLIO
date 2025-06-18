@@ -3391,6 +3391,37 @@ body {
   width: 600px;
 }
 
+/* photo upload */
+.uploaded-photo {
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: cover;
+  margin: 10px;
+  position: relative;
+}
+
+.photo-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  padding: 4px;
+}
+
+.camera-80 {
+  width: 50px;
+}
+
+/* logo of lensi africa (footer) */
+.lensi_africa {
+  width: 150px;
+}
+
+
 /* Cover page style */
 .cover {
   text-align: center;

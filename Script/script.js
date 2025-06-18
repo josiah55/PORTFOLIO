@@ -33,49 +33,6 @@ modal.addEventListener('show.bs.modal', function (event) {
 });
 
 
-//search bar for photos on the AfricaVista
-const searchInput = document.getElementById('searchInput');
-const itemList = document.getElementById('explore');
-const items = itemList.getElementsByTagName('button');
-
-searchInput.addEventListener('keyup', function() {
-  const filter = searchInput.value.toLowerCase();
-
-  for (let i = 0; i < items.length; i++) {
-    const text = items[i].textContent.toLowerCase();
-    if (text.includes(filter)) {
-      items[i].style.display = '';
-    } else {
-      items[i].style.display = 'none';
-    }
-  }
-});
-
-
-//upload your photo
-const uploadForm = document.getElementById('uploadForm');
-const photoUpload = document.getElementById('photoUpload');
-const previewContainer = document.getElementById('previewContainer');
-const previewImage = document.getElementById('previewImage');
-
-photoUpload.addEventListener('change', () => {
-  const file = photoUpload.files[0];
-  if (file) {
-    const reader = new FileReader();
-    reader.onload = e => {
-      previewImage.src = e.target.result;
-      previewContainer.style.display = 'block';
-    };
-    reader.readAsDataURL(file);
-  }
-});
-
-uploadForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  alert("This is a demo upload. To make it work, connect to a backend.");
-});
-
-
 //business starter Placeholder JS for form submission
 document.querySelector("form").addEventListener("submit", function (e) {
   e.preventDefault();

@@ -14,13 +14,13 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="/index.html"><img src="/Images/lens1.PNG" alt="" class="photo-logo"></a>
+    <a class="navbar-brand" href="/Html/Africa.html"><img src="/Images/lens1.PNG" alt="" class="photo-logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav me-auto">
-        <li class="nav-item"><a class="nav-link text-light" href="#explore">Explore</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="/index.html">Home</a></li>
         <li class="nav-item">
           <a class="nav-link text-light" href="/Html/blog.html">Blog</a>
         </li>
@@ -32,7 +32,7 @@
         <input class="form-control me-2" type="text" id="searchInput" placeholder="Search photos...">
         <button class="btn btn-outline-light" type="submit">Search</button>
       </form>
-      <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginModal">Login/Signup</button>
+      <button class="btn btn-outline-light" id="loginBtn" data-bs-toggle="modal" data-bs-target="#loginModal">Login/Signup</button>
     </div>
   </div>
 </nav>
@@ -46,9 +46,9 @@
 
   <!-- Overlay Content -->
   <div class="container h-100 d-flex flex-column justify-content-center align-items-center position-relative text-white text-center">
-    <h1 class="display-4 fw-bold text-white pt-5 mt-5">Welcome To Lensi Africa</h1>
-    <p class="lead text-primary text-white fs-2 fw-bold">African Photos At It's Peak</p>
-    <a href="#explore" class="btn btn-light text-black btn-lg mt-3 fw-bold">Explore</a>
+    <h1 class="display-4 fw-bold text-white pt-5 mt-5">Discover Africa Through Photos</h1>
+    <p class="lead text-primary text-white fs-2 fw-bold">Explore culture, beauty, and stories of Africa captured in stunning visuals.</p>
+    <a href="#explore" class="btn btn-light text-black btn-lg mt-3 fw-bold">Explore Galleries</a>
   </div>
 </section>
 
@@ -58,27 +58,34 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Login or Signup</h5>
+        <h5 class="modal-title" id="modalTitle">Login</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
       <div class="modal-body">
-        <form>
+        <form id="authForm">
           <div class="mb-3">
             <label>Email address</label>
-            <input type="email" class="form-control" required>
+            <input type="email" id="email" class="form-control" required>
           </div>
           <div class="mb-3">
             <label>Password</label>
-            <input type="password" class="form-control" required>
+            <input type="password" id="password" class="form-control" required>
           </div>
-          <button type="submit" class="btn btn-primary w-100">Login</button>
+          <div class="mb-3 d-none" id="nameField">
+            <label>Full Name</label>
+            <input type="text" id="fullName" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-primary w-100" id="authBtn">Login</button>
         </form>
         <hr>
-        <p class="text-center">Don't have an account? <a href="#">Signup here</a></p>
+        <p class="text-center" id="toggleText">
+          Don't have an account? <a href="#" id="toggleAuth">Signup here</a>
+        </p>
       </div>
     </div>
   </div>
 </div>
+
 
 
 <!-- About Section -->
@@ -124,9 +131,9 @@
   <div class="d-flex flex-wrap justify-content-center gap-3">
     <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#categoryModal">Pastors</button>
     <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#musicianModal">Musicians</button>
-    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#natureModal">Nature</button>
+    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#natureModal">Nature & Wildlife</button>
     <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#businessModal">Business Moguls</button>
-    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#traditionModal">Tradition</button>
+    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#traditionModal">Culture & Tradition</button>
     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#celebritiesModal">Comedians</button>
   </div>
 </section>
@@ -177,10 +184,9 @@
       </div>
       <div class="modal-body">
         <ul class="list-group">
+          <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#musicianPhotosModal" data-bs-dismiss="modal">Musician A</a></li>
           <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#musicianPhotosModal"
-              data-bs-dismiss="modal">Musician A</a></li>
-          <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#musicianPhotosModal"
-              data-bs-dismiss="modal">Musician B</a></li>
+          data-bs-dismiss="modal">Musician B</a></li>
         </ul>
       </div>
     </div>
@@ -198,7 +204,7 @@
       <div class="modal-body">
         <ul class="list-group">
           <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#musicianPhotosModal"
-              data-bs-dismiss="modal">Nature A</a></li>
+          data-bs-dismiss="modal">Nature A</a></li>
           <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#musicianPhotosModal"
           data-bs-dismiss="modal">Nature B</a></li>
         </ul>
@@ -218,7 +224,7 @@
       <div class="modal-body">
         <ul class="list-group">
           <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#musicianPhotosModal"
-              data-bs-dismiss="modal">Business mogul A</a></li>
+          data-bs-dismiss="modal">Business mogul A</a></li>
           <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#musicianPhotosModal"
           data-bs-dismiss="modal">Business mogul B</a></li>
         </ul>
@@ -238,7 +244,7 @@
       <div class="modal-body">
         <ul class="list-group">
           <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#musicianPhotosModal"
-              data-bs-dismiss="modal">Tradition  A</a></li>
+          data-bs-dismiss="modal">Tradition  A</a></li>
           <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#musicianPhotosModal"
           data-bs-dismiss="modal">Tradition B</a></li>
         </ul>
@@ -280,44 +286,53 @@
       <div class="modal-body">
         <div class="row g-3">
           <div class="col-md-4">
-            <img src="/Images/Pastors/Dad GO.jpg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <img src="/Images/Pastors/Dad-GO.jpg" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="/Images/Pastors/Dad-GO.jpg">Download</button>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/Daddy GO..jpg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <img src="/Images/Pastors/Daddy-GO..jpg" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Daddy-GO..jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Daddy-Go.jpg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Daddy-Go.jpg">Download</button>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/Daddy GO2.webp" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100">Download</a>
+            <img src="/Images/Pastors/Daddy-GO2.webp" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Daddy-GO2.webp">Download</button>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/Daddy GO1.jpg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100">Download</a>
+            <img src="/Images/Pastors/Daddy-GO1.jpg" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Daddy-GO1.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/PAPA-Adeboye-2.jpg" class="img-fluid rounded">
-            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/PAPA-Adeboye-2.jpg">Download</button>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/Papa G.O.jpg" class="img-fluid rounded">
-            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <img src="/Images/Pastors/Papa-G.O.jpg" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Papa-G.O.jpg">Download</button>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/Papa G.O4.jpg" class="img-fluid rounded">
-            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <img src="/Images/Pastors/Papa-G.O4.jpg" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Papa-G.O4.jpg">Download</button>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/Papa G.O1.jpg" class="img-fluid rounded">
-            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <img src="/Images/Pastors/Papa-G.O1.jpg" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Papa-G.O1.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Papa GO2.jpg" class="img-fluid rounded">
-            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Papa GO2.jpg">Download</button>
           </div>
           <!-- Add more images dynamically here -->
         </div>
@@ -338,43 +353,53 @@
         <div class="row g-3">
           <div class="col-md-4">
             <img src="/Images/Pastors/Papa Kumuyi-10.webp" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Papa Kumuyi-10.webp">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Papa Kumuyi-2.jpeg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Papa Kumuyi-2.jpeg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Papa Kumuyi-11.png" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Papa Kumuyi-11.png">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Papa Kumuyi-5.jpg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100">Download</a>
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Papa Kumuyi-5.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Papa Kumuyi-6.jpg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100">Download</a>
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Papa Kumuyi-6.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Papa Kumuyi.jpg" class="img-fluid rounded">
-            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Papa Kumuyi.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Papa Kumuyi-9.webp" class="img-fluid rounded">
-            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Papa Kumuyi-9.webp">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Papa Kumuyi4.jpg" class="img-fluid rounded">
-            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Papa Kumuyi4.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Papa Kumuyi3.jpg" class="img-fluid rounded">
-            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Papa Kumuyi3.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Papa Kumuyi2.jpg" class="img-fluid rounded">
-            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Papa Kumuyi2.jpg">Download</button>
           </div>
           <!-- Add more images dynamically here -->
         </div>
@@ -395,43 +420,53 @@
         <div class="row g-3">
           <div class="col-md-4">
             <img src="/Images/Pastors/Pastor Chris.jpg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Pastor Chris.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Pastor Chris1.jpg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Pastor Chris1.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Pastor Chris2.jpg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Pastor Chris2.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Pastor Chris3.jpg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100">Download</a>
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Pastor Chris3.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Pastor Chris6.jpg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100">Download</a>
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Pastor Chris6.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Pastor Chris7.jpg" class="img-fluid rounded">
-            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Pastor Chris7.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Pastor Chris4.jpg" class="img-fluid rounded">
-            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Pastor Chris4.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Pastor Chris5.jpg" class="img-fluid rounded">
-            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Pastor Chris5.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Pastor Chris9.jpg" class="img-fluid rounded">
-            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Pastor Chris9.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Pastor Chris10.jpg" class="img-fluid rounded">
-            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Pastor Chris10.jpg">Download</button>
           </div>
           <!-- Add more images dynamically here -->
         </div>
@@ -451,28 +486,64 @@
       <div class="modal-body">
         <div class="row g-3">
           <div class="col-md-4">
-            <img src="/Images/Pastors/Dad GO.jpg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="">Download</button>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/Daddy GO..jpg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="">Download</button>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/Daddy GO1.jpg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="">Download</button>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/Daddy GO2.webp" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100">Download</a>
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="">Download</button>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/Daddy-Go.jpg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100">Download</a>
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="">Download</button>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/PAPA-Adeboye-2.jpg" class="img-fluid rounded">
-            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="">Download</button>
+          </div>
+          <div class="col-md-4">
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="">Download</button>
+          </div>
+          <div class="col-md-4">
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="">Download</button>
+          </div>
+          <div class="col-md-4">
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="">Download</button>
+          </div>
+          <div class="col-md-4">
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="">Download</button>
+          </div>
+          <div class="col-md-4">
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="">Download</button>
+          </div>
+          <div class="col-md-4">
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="">Download</button>
           </div>
           <!-- Add more images dynamically here -->
         </div>
@@ -492,28 +563,34 @@
       <div class="modal-body">
         <div class="row g-3">
           <div class="col-md-4">
-            <img src="/Images/Pastors/Dad GO.jpg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="">Download</button>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/Daddy GO..jpg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="">Download</button>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/Daddy GO1.jpg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="">Download</button>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/Daddy GO2.webp" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100">Download</a>
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="">Download</button>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/Daddy-Go.jpg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100">Download</a>
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="">Download</button>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/PAPA-Adeboye-2.jpg" class="img-fluid rounded">
-            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="">Download</button>
           </div>
           <!-- Add more images dynamically here -->
         </div>
@@ -533,28 +610,34 @@
       <div class="modal-body">
         <div class="row g-3">
           <div class="col-md-4">
-            <img src="/Images/Pastors/Dad GO.jpg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="">Download</button>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/Daddy GO..jpg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="">Download</button>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/Daddy GO1.jpg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="">Download</button>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/Daddy GO2.webp" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100">Download</a>
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="">Download</button>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/Daddy-Go.jpg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100">Download</a>
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="">Download</button>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/PAPA-Adeboye-2.jpg" class="img-fluid rounded">
-            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="">Download</button>
           </div>
           <!-- Add more images dynamically here -->
         </div>
@@ -574,28 +657,31 @@
       <div class="modal-body">
         <div class="row g-3">
           <div class="col-md-4">
-            <img src="/Images/Pastors/Dad GO.jpg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="/Images/Pastors/Pastor Chris10.jpg">Download</button>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/Daddy GO..jpg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+              data-file="">Download</button>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/Daddy GO1.jpg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            data-file="">Download</button>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/Daddy GO2.webp" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100">Download</a>
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="">Download</button>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/Daddy-Go.jpg" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100">Download</a>
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="">Download</button>
           </div>
           <div class="col-md-4">
-            <img src="/Images/Pastors/PAPA-Adeboye-2.jpg" class="img-fluid rounded">
-            <a href="" class="btn btn-sm btn-outline-primary mt-2 w-100" download>Download</a>
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="">Download</button>
           </div>
           <!-- Add more images dynamically here -->
         </div>
@@ -617,8 +703,44 @@
       <div class="modal-body">
         <div class="row g-3">
           <div class="col-md-4">
-            <img src="https://via.placeholder.com/300" class="img-fluid rounded">
-            <a href="#" class="btn btn-sm btn-outline-primary mt-2 w-100">Download</a>
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="">Download</button>
+          </div>
+          <div class="col-md-4">
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="">Download</button>
+          </div>
+          <div class="col-md-4">
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="">Download</button>
+          </div>
+          <div class="col-md-4">
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="">Download</button>
+          </div>
+          <div class="col-md-4">
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="">Download</button>
+          </div>
+          <div class="col-md-4">
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="">Download</button>
+          </div>
+          <div class="col-md-4">
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="">Download</button>
+          </div>
+          <div class="col-md-4">
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="">Download</button>
+          </div>
+          <div class="col-md-4">
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="">Download</button>
+          </div>
+          <div class="col-md-4">
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="">Download</button>
           </div>
         </div>
       </div>
@@ -642,7 +764,7 @@
                 data-bs-target="#imageModal1">
               <div class="my-gallery-card" id="my-imgcard1">
                 <h5 class="card-title text-white fw-bold">People</h5>
-                <a href="/Images/featured photo1.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="/Images/featured photo1.jpg"><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -663,7 +785,7 @@
                 data-bs-target="#imageModal2">
               <div class="my-gallery-card">
                 <h5 class="card-title text-white fw-bold">Nature</h5>
-                <a href="/Images/featured photo2.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="/Images/featured photo2.jpg"><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -684,7 +806,7 @@
                 data-bs-target="#imageModal3">
               <div class="my-gallery-card">
                 <h5 class="card-title text-white fw-bold">Mother</h5>
-                <a href="/Images/featured photo3.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -704,7 +826,7 @@
               <img src="/Images/featured photo4.jpg" class="card-img-top my-img-top4" alt="" data-bs-toggle="modal" data-bs-target="#imageModal4">
               <div class="my-gallery-card">
                 <h5 class="card-title text-white fw-bold">Nature</h5>
-                <a href="/Images/featured photo4.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -724,7 +846,7 @@
               <img src="/Images/featured photo5.jpg" class="card-img-top my-img-top5" alt="" data-bs-toggle="modal" data-bs-target="#imageModal5">
               <div class="my-gallery-card5">
                 <h5 class="card-title text-white fw-bold">Fabrics</h5>
-                <a href="/Images/featured photo5.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -745,7 +867,7 @@
                 data-bs-target="#imageModal6">
               <div class="my-gallery-card6">
                 <h5 class="card-title text-white fw-bold">People</h5>
-                <a href="/Images/featured photo6.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -766,7 +888,7 @@
                 data-bs-target="#imageModal7">
               <div class="my-gallery-card" id="my-imgcard7">
                 <h5 class="card-title text-white">Children</h5>
-                <a href="/Images/feature photo7.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -787,7 +909,7 @@
                 data-bs-target="#imageModal8">
               <div class="my-gallery-card8">
                 <h5 class="card-title text-white fw-bold">People</h5>
-                <a href="/Images/feature photo8.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -808,7 +930,7 @@
                 data-bs-target="#imageModal9">
               <div class="my-gallery-card9">
                 <h5 class="card-title text-white fw-bold">Animals</h5>
-                <a href="/Images/feature photo9.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -829,7 +951,7 @@
                 data-bs-target="#imageModal10">
               <div class="my-gallery-card" id="my-imgcard10">
                 <h5 class="card-title text-white fw-bold">Elephants</h5>
-                <a href="/Images/feature photo10.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -850,7 +972,7 @@
                 data-bs-target="#imageModal11">
               <div class="my-gallery-card11">
                 <h5 class="card-title text-white fw-bold">Children</h5>
-                <a href="/Images/feature photo11.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -871,7 +993,7 @@
                 data-bs-target="#imageModal12">
               <div class="my-gallery-card12">
                 <h5 class="card-title text-white">Nature</h5>
-                <a href="/Images/nature1.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -892,7 +1014,7 @@
                 data-bs-target="#imageModal13">
               <div class="my-gallery-card" id="my-imgcard13">
                 <h5 class="card-title text-white">Woman</h5>
-                <a href="/Images/woman2.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -913,7 +1035,7 @@
                 data-bs-target="#imageModal14">
               <div class="my-gallery-card14">
                 <h5 class="card-title text-white">Mother</h5>
-                <a href="/Images/woman tradition1.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -934,7 +1056,7 @@
                 data-bs-target="#imageModal15">
               <div class="my-gallery-card15">
                 <h5 class="card-title text-white">Tradition</h5>
-                <a href="/Images/woman tradition.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -958,8 +1080,8 @@
             <div class="card border-0">
               <img src="/Images/Child Lensi Africa.jpg" class="card-img-top my-img-top16" alt="" data-bs-toggle="modal" data-bs-target="#imageModal16">
               <div class="my-gallery-card" id="my-imgcard16">
-                <h5 class="card-title text-white fw-bold">People</h5>
-                <a href="/Images/featured photo1.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <h5 class="card-title text-white fw-bold">Child</h5>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -978,8 +1100,8 @@
             <div class="card border-0">
               <img src="/Images/Children Lensi Africa.jpg" class="card-img-top my-img-card17" alt="" data-bs-toggle="modal" data-bs-target="#imageModal17">
               <div class="my-gallery-card" id="my-imgcard17">
-                <h5 class="card-title text-white fw-bold">Nature</h5>
-                <a href="/Images/featured photo2.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <h5 class="card-title text-white fw-bold">Boy</h5>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -999,8 +1121,8 @@
               <img src="/Images/Horse Lensi Africa.jpg" class="card-img-top my-img-top18" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal18">
               <div class="my-gallery-card" id="my-imgcard18">
-                <h5 class="card-title text-white fw-bold">Mother</h5>
-                <a href="/Images/featured photo3.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <h5 class="card-title text-white fw-bold">Horse</h5>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1020,8 +1142,8 @@
               <img src="/Images/Image Lensi Africa.jpg" class="card-img-top my-img-top19" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal19">
               <div class="my-gallery-card" id="my-imgcard19">
-                <h5 class="card-title text-white fw-bold">Nature</h5>
-                <a href="/Images/featured photo4.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <h5 class="card-title text-white fw-bold">Calf</h5>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1041,8 +1163,8 @@
               <img src="/Images/Kids Lensi Africa.jpg" class="card-img-top my-img-top20" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal20">
               <div class="my-gallery-card20">
-                <h5 class="card-title text-white fw-bold">Fabrics</h5>
-                <a href="/Images/featured photo5.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <h5 class="card-title text-white fw-bold">Children</h5>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1062,8 +1184,8 @@
               <img src="/Images/Land Lensi Africa.jpg" class="card-img-top my-img-top21" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal21">
               <div class="my-gallery-card21">
-                <h5 class="card-title text-white fw-bold">People</h5>
-                <a href="/Images/featured photo6.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <h5 class="card-title text-white fw-bold">Land</h5>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1083,8 +1205,8 @@
               <img src="/Images/Lion Lensi Africa.jpg" class="card-img-top7 my-img-top22" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal22">
               <div class="my-gallery-card" id="my-imgcard22">
-                <h5 class="card-title text-white">Children</h5>
-                <a href="/Images/feature photo7.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <h5 class="card-title text-white">Lion</h5>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1104,8 +1226,8 @@
               <img src="/Images/Lion-Lioness Lensi Africa.jpg" class="card-img-top my-img-top23" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal23">
               <div class="my-gallery-card23">
-                <h5 class="card-title text-white fw-bold">People</h5>
-                <a href="/Images/feature photo8.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <h5 class="card-title text-white fw-bold">Lion/Lioness</h5>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1125,8 +1247,8 @@
               <img src="/Images/Masqurade Lensi Africa.jpg" class="card-img-top my-img-top24" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal24">
               <div class="my-gallery-card24">
-                <h5 class="card-title text-white fw-bold">Animals</h5>
-                <a href="/Images/feature photo9.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <h5 class="card-title text-white fw-bold">Culture</h5>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1146,8 +1268,8 @@
               <img src="/Images/Monkey Lensi Africa.jpg" class="card-img-top my-img-top25" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal25">
               <div class="my-gallery-card" id="my-imgcard25">
-                <h5 class="card-title text-white fw-bold">Elephants</h5>
-                <a href="/Images/feature photo10.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <h5 class="card-title text-white fw-bold">Monkey</h5>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1167,8 +1289,8 @@
               <img src="/Images/Ostrich Lensi Africa.jpg" class="card-img-top my-img-top26" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal26">
               <div class="my-gallery-card26">
-                <h5 class="card-title text-white fw-bold">Children</h5>
-                <a href="/Images/feature photo11.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <h5 class="card-title text-white fw-bold">Giraffe</h5>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1188,8 +1310,8 @@
               <img src="/Images/Palm Tree Lensi Africa.jpg" class="card-img-top my-img-top27" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal27">
               <div class="my-gallery-card27">
-                <h5 class="card-title text-white">Nature</h5>
-                <a href="/Images/nature1.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <h5 class="card-title text-white">Palmtree</h5>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1209,8 +1331,8 @@
               <img src="/Images/Students Lensi Africa.jpg" class="card-img-top my-img-top28" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal28">
               <div class="my-gallery-card" id="my-imgcard28">
-                <h5 class="card-title text-white">Woman</h5>
-                <a href="/Images/woman2.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <h5 class="card-title text-white">Pupils</h5>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1230,8 +1352,8 @@
               <img src="/Images/Women Lensi Africa.jpg" class="card-img-top my-img-top29" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal29">
               <div class="my-gallery-card29">
-                <h5 class="card-title text-white">Mother</h5>
-                <a href="/Images/woman tradition1.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <h5 class="card-title text-white">Women</h5>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1251,8 +1373,8 @@
               <img src="/Images/Kids-Lensi Africa.jpg" class="card-img-top my-img-top30" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal30">
               <div class="my-gallery-card30">
-                <h5 class="card-title text-white">Tradition</h5>
-                <a href="/Images/woman tradition.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <h5 class="card-title text-white">Kids</h5>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1278,7 +1400,7 @@
                 data-bs-target="#imageModal1">
               <div class="my-gallery-card" id="my-imgcard1">
                 <h5 class="card-title text-white fw-bold">People</h5>
-                <a href="/Images/featured photo1.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1299,7 +1421,7 @@
                 data-bs-target="#imageModal2">
               <div class="my-gallery-card">
                 <h5 class="card-title text-white fw-bold">Nature</h5>
-                <a href="/Images/featured photo2.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1320,7 +1442,7 @@
                 data-bs-target="#imageModal3">
               <div class="my-gallery-card">
                 <h5 class="card-title text-white fw-bold">Mother</h5>
-                <a href="/Images/featured photo3.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1341,7 +1463,7 @@
                 data-bs-target="#imageModal4">
               <div class="my-gallery-card">
                 <h5 class="card-title text-white fw-bold">Nature</h5>
-                <a href="/Images/featured photo4.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1362,7 +1484,7 @@
                 data-bs-target="#imageModal5">
               <div class="my-gallery-card5">
                 <h5 class="card-title text-white fw-bold">Fabrics</h5>
-                <a href="/Images/featured photo5.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1383,7 +1505,7 @@
                 data-bs-target="#imageModal6">
               <div class="my-gallery-card6">
                 <h5 class="card-title text-white fw-bold">People</h5>
-                <a href="/Images/featured photo6.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1404,7 +1526,7 @@
                 data-bs-target="#imageModal7">
               <div class="my-gallery-card" id="my-imgcard7">
                 <h5 class="card-title text-white">Children</h5>
-                <a href="/Images/feature photo7.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1425,7 +1547,7 @@
                 data-bs-target="#imageModal8">
               <div class="my-gallery-card8">
                 <h5 class="card-title text-white fw-bold">People</h5>
-                <a href="/Images/feature photo8.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1446,7 +1568,7 @@
                 data-bs-target="#imageModal9">
               <div class="my-gallery-card9">
                 <h5 class="card-title text-white fw-bold">Animals</h5>
-                <a href="/Images/feature photo9.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1467,7 +1589,7 @@
                 data-bs-target="#imageModal10">
               <div class="my-gallery-card" id="my-imgcard10">
                 <h5 class="card-title text-white fw-bold">Elephants</h5>
-                <a href="/Images/feature photo10.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1488,7 +1610,7 @@
                 data-bs-target="#imageModal11">
               <div class="my-gallery-card11">
                 <h5 class="card-title text-white fw-bold">Children</h5>
-                <a href="/Images/feature photo11.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1509,7 +1631,7 @@
                 data-bs-target="#imageModal12">
               <div class="my-gallery-card12">
                 <h5 class="card-title text-white">Nature</h5>
-                <a href="/Images/nature1.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1530,7 +1652,7 @@
                 data-bs-target="#imageModal13">
               <div class="my-gallery-card" id="my-imgcard13">
                 <h5 class="card-title text-white">Woman</h5>
-                <a href="/Images/woman2.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1551,7 +1673,7 @@
                 data-bs-target="#imageModal14">
               <div class="my-gallery-card14">
                 <h5 class="card-title text-white">Mother</h5>
-                <a href="/Images/woman tradition1.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1572,7 +1694,7 @@
                 data-bs-target="#imageModal15">
               <div class="my-gallery-card15">
                 <h5 class="card-title text-white">Tradition</h5>
-                <a href="/Images/woman tradition.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1598,7 +1720,7 @@
                 data-bs-target="#imageModal1">
               <div class="my-gallery-card" id="my-imgcard1">
                 <h5 class="card-title text-white fw-bold">People</h5>
-                <a href="/Images/featured photo1.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1619,7 +1741,7 @@
                 data-bs-target="#imageModal2">
               <div class="my-gallery-card">
                 <h5 class="card-title text-white fw-bold">Nature</h5>
-                <a href="/Images/featured photo2.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1640,7 +1762,7 @@
                 data-bs-target="#imageModal3">
               <div class="my-gallery-card">
                 <h5 class="card-title text-white fw-bold">Mother</h5>
-                <a href="/Images/featured photo3.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1661,7 +1783,7 @@
                 data-bs-target="#imageModal4">
               <div class="my-gallery-card">
                 <h5 class="card-title text-white fw-bold">Nature</h5>
-                <a href="/Images/featured photo4.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1682,7 +1804,7 @@
                 data-bs-target="#imageModal5">
               <div class="my-gallery-card5">
                 <h5 class="card-title text-white fw-bold">Fabrics</h5>
-                <a href="/Images/featured photo5.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1703,7 +1825,7 @@
                 data-bs-target="#imageModal6">
               <div class="my-gallery-card6">
                 <h5 class="card-title text-white fw-bold">People</h5>
-                <a href="/Images/featured photo6.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1724,7 +1846,7 @@
                 data-bs-target="#imageModal7">
               <div class="my-gallery-card" id="my-imgcard7">
                 <h5 class="card-title text-white">Children</h5>
-                <a href="/Images/feature photo7.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1741,11 +1863,10 @@
           </div>
           <div class="col-md-4">
             <div class="card border-0">
-              <img src="/Images/feature photo8.jpg" class="card-img-top my-img-top8" alt="" data-bs-toggle="modal"
-                data-bs-target="#imageModal8">
+              <img src="/Images/feature photo8.jpg" class="card-img-top my-img-top8" alt="" data-bs-toggle="modal" data-bs-target="#imageModal8">
               <div class="my-gallery-card8">
                 <h5 class="card-title text-white fw-bold">People</h5>
-                <a href="/Images/feature photo8.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1762,11 +1883,10 @@
           </div>
           <div class="col-md-4">
             <div class="card border-0">
-              <img src="/Images/feature photo9.jpg" class="card-img-top my-img-top9" alt="" data-bs-toggle="modal"
-                data-bs-target="#imageModal9">
+              <img src="/Images/feature photo9.jpg" class="card-img-top my-img-top9" alt="" data-bs-toggle="modal" data-bs-target="#imageModal9">
               <div class="my-gallery-card9">
                 <h5 class="card-title text-white fw-bold">Animals</h5>
-                <a href="/Images/feature photo9.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1783,11 +1903,10 @@
           </div>
           <div class="col-md-4">
             <div class="card border-0">
-              <img src="/Images/feature photo10.jpg" class="card-img-top my-img-top10" alt="" data-bs-toggle="modal"
-                data-bs-target="#imageModal10">
+              <img src="/Images/feature photo10.jpg" class="card-img-top my-img-top10" alt="" data-bs-toggle="modal" data-bs-target="#imageModal10">
               <div class="my-gallery-card" id="my-imgcard10">
                 <h5 class="card-title text-white fw-bold">Elephants</h5>
-                <a href="/Images/feature photo10.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1804,11 +1923,10 @@
           </div>
           <div class="col-md-4">
             <div class="card border-0">
-              <img src="/Images/feature photo11.jpg" class="card-img-top my-img-top11" alt="" data-bs-toggle="modal"
-                data-bs-target="#imageModal11">
+              <img src="/Images/feature photo11.jpg" class="card-img-top my-img-top11" alt="" data-bs-toggle="modal" data-bs-target="#imageModal11">
               <div class="my-gallery-card11">
                 <h5 class="card-title text-white fw-bold">Children</h5>
-                <a href="/Images/feature photo11.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1825,11 +1943,10 @@
           </div>
           <div class="col-md-4">
             <div class="card border-0">
-              <img src="/Images/nature1.jpg" class="card-img-top my-img-top12" alt="" data-bs-toggle="modal"
-                data-bs-target="#imageModal12">
+              <img src="/Images/nature1.jpg" class="card-img-top my-img-top12" alt="" data-bs-toggle="modal" data-bs-target="#imageModal12">
               <div class="my-gallery-card12">
                 <h5 class="card-title text-white">Nature</h5>
-                <a href="/Images/nature1.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1849,7 +1966,7 @@
               <img src="/Images/woman2.jpg" class="card-img-top my-img-top13" alt="" data-bs-toggle="modal" data-bs-target="#imageModal13">
               <div class="my-gallery-card" id="my-imgcard13">
                 <h5 class="card-title text-white">Woman</h5>
-                <a href="/Images/woman2.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1866,11 +1983,10 @@
           </div>
           <div class="col-md-4">
             <div class="card border-0">
-              <img src="/Images/woman tradition1.jpg" class="card-img-top my-img-top14" alt="" data-bs-toggle="modal"
-                data-bs-target="#imageModal14">
+              <img src="/Images/woman tradition1.jpg" class="card-img-top my-img-top14" alt="" data-bs-toggle="modal" data-bs-target="#imageModal14">
               <div class="my-gallery-card14">
                 <h5 class="card-title text-white">Mother</h5>
-                <a href="/Images/woman tradition1.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1887,11 +2003,10 @@
           </div>
           <div class="col-md-4">
             <div class="card border-0">
-              <img src="/Images/woman tradition.jpg" class="card-img-top my-img-top15" alt="" data-bs-toggle="modal"
-                data-bs-target="#imageModal15">
+              <img src="/Images/woman tradition.jpg" class="card-img-top my-img-top15" alt="" data-bs-toggle="modal" data-bs-target="#imageModal15">
               <div class="my-gallery-card15">
                 <h5 class="card-title text-white">Tradition</h5>
-                <a href="/Images/woman tradition.jpg" class="btn btn-dark" download><i class="bi bi-download"></i></a>
+                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1919,33 +2034,37 @@
   </div>
 </div>
 </section>
-
   
 <!--upload your photo-->
 <section class="container pt-5 my-5 my_container">
-  <h2 class="text-center pt-4 mb-4">Upload Your Photo</h2>
+  <h2 class="text-center pt-4 mb-4 fs-1 fw-bold">Got Amazing Photos of Africa?
+    <p class="fs-5 text-muted">Join our community of photographers and share the beauty of the continent with the world.</p>
+  </h2>
+
   <form id="uploadForm" enctype="multipart/form-data">
     <div class="mb-3">
       <label for="photoTitle" class="form-label">Photo Title</label>
       <input type="text" class="form-control" id="photoTitle" placeholder="Enter a title for your photo" required>
     </div>
     <div class="mb-3">
-      <label for="photoUpload" class="form-label">Choose Photo</label>
-      <input class="form-control" type="file" id="photoUpload" accept="image/*" required>
+      <label for="photoUpload" class="form-label">Choose Photos</label>
+      <input class="form-control" type="file" id="photoUpload" accept="image/*" multiple required>
     </div>
     <div class="d-grid">
-      <button type="submit" class="btn btn-dark">Upload Photo</button>
+      <button type="submit" class="btn btn-dark protected">Upload Photo(s)</button>
     </div>
   </form>
-  <!-- Preview Uploaded Image -->
-  <div id="previewContainer" class="mt-4" style="display: none;">
-    <h5>Preview:</h5>
-    <img id="previewImage" class="img-fluid rounded shadow" alt="Uploaded Preview">
+
+  <!-- Preview Uploaded Images -->
+  <div id="previewContainer" class="mt-5">
+    <h5 class="text-white bg-dark p-2 fs-5 fst-italic">Uploaded Photos:</h5>
+    <div id="photoGallery" class="d-flex flex-wrap"></div>
   </div>
 </section>
 
+
 <!-- Footer Section -->
-<footer class="bg-dark text-white pt-5 pb-4">
+<footer class="bg-black text-white pt-5 pb-4">
   <div class="container text-center text-md-start">
     <div class="row text-center text-md-start">
 
@@ -1984,7 +2103,7 @@
     <!-- Copyright -->
     <div class="row mt-4">
       <div class="col-md-12 text-center">
-        <p class="text-white-50">© 2025 Africa Photo Gallery. All rights reserved.</p>
+        <p class="text-white-50">Copyright © 2025 Lensi Africa Gallery. All rights reserved.</p>
       </div>
     </div>
   </div>
