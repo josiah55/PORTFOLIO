@@ -12,20 +12,20 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+<nav id="top" class="navbar navbar-expand-lg navbar-dark bg-black" style="z-index: 9999;">
   <div class="container">
     <a class="navbar-brand" href="/Html/Africa.html"><img src="/Images/lens1.PNG" alt="" class="photo-logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav me-auto pt-3">
+      <ul class="navbar-nav me-auto mt-3">
         <li class="nav-item"><a class="nav-link text-light" href="/index.html">Home</a></li>
         <li class="nav-item">
           <a class="nav-link text-light" href="/Html/blog.html">Blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="/Html/contact.html">Contact-Us</a>
+          <a class="nav-link text-light" href="#Contact-Us">Contact-Us</a>
         </li>
       </ul>
       <form class="d-flex me-2">
@@ -37,7 +37,7 @@
   </div>
 </nav>
 
-<section class="position-relative overflow-hidden" style="height: 100vh;">
+<section class="position-relative overflow-hidden hero_video" style="height: 100vh;">
   <!-- Background Video -->
   <video autoplay muted loop playsinline class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover">
     <source src="/Videos/hero video1.mp4" type="video/mp4">
@@ -45,9 +45,11 @@
   </video>
 
   <!-- Overlay Content -->
-  <div class="container h-100 d-flex flex-column justify-content-center align-items-center position-relative text-white text-center">
+  <div
+    class="container h-100 d-flex flex-column justify-content-center align-items-center position-relative text-white text-center hero_text">
     <h1 class="display-4 fw-bold text-white pt-5 mt-5">Discover Africa Through Photos</h1>
-    <p class="lead text-primary text-white fs-2 fw-bold">Explore culture, beauty, and stories of Africa captured in stunning visuals.</p>
+    <p class="lead text-primary text-white fs-2 fw-bold">Explore culture, beauty, and stories of Africa captured in
+      stunning visuals.</p>
     <a href="#explore" class="btn btn-light text-black btn-lg mt-3 fw-bold">Explore Categories</a>
   </div>
 </section>
@@ -91,7 +93,7 @@
 <!-- About Section -->
 <section class="bg-light py-5" id="about">
   <div class="container pt-5 mt-5">
-    <h2 class="text-center mb-4 pt-5">ABOUT LENSI AFRICA</h2>
+    <h2 class="text-center mb-4 pt-5 fs-2 fw-bold fst-italic text-muted">ABOUT LENSI AFRICA</h2>
     <p class="fs-5">Step into the heart of Africa through our vibrant and diverse Photo Gallery, where every image captures the spirit, beauty, and culture of the continent. From powerful portraits of African pastors and inspiring entrepreneurs to the rich traditions, natural wonders, music, and comedy that define our people — this is a space that celebrates Africa in all its glory.</p>
     <p class="fs-5">Browse through carefully curated categories such as African cultures, celebrities, musicians, comedians, nature, and business moguls. Discover stories told through visuals — from the colorful festivals and sacred ceremonies to the faces
     shaping Africa's future.</p>
@@ -127,7 +129,7 @@
 
 <!-- Explore Section -->
 <section class="container my-5 pt-5" id="explore">
-  <h2 class="mb-4 text-center pt-5">Explore Categories</h2>
+  <h2 class="mb-4 text-center pt-5 fs-1 fw-bold">Explore Categories</h2>
   <div class="d-flex flex-wrap justify-content-center gap-3">
     <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#categoryModal">Pastors</button>
     <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#musicianModal">Musicians</button>
@@ -753,7 +755,7 @@
 <!-- Cards Gallery Featured Photos -->
 <section class="container my-5">
   <div id="myCarouselWrapper">
-  <h3 class="mb-4 pt-4 text-center">Featured Photos</h3>
+  <h3 class="mb-4 pt-4 text-center fs-3">Featured Photos</h3>
   <div id="groupCarousel" class="carousel slide" data-bs-ride="false">
     <div class="carousel-inner">
       <div class="carousel-item active">            <!--Group 1-->
@@ -2036,14 +2038,12 @@
 </section>
 
 <!--More Categories-->
-<section class="container pt-5 mt-5">
+<section class="container pt-3">
   <div class="row g-4 pt-5">
-    <div class="col-md-2">
       <h3 class="text-muted">More Categories <img class="ICON" src="/Images/ICON.png" alt=""></h3>
-    </div>
     <!-- Card 1 -->
-    <div class="col-sm-3">
-      <div class="card w-100 shadow-sm" style="max-width: 250px;" onclick="toggleGallery('gallery1')">
+    <div class="col-md-4">
+      <div class="card w-100 shadow-sm" style="max-width: 400px;" onclick="toggleGallery('gallery1')">
         <img src="/Images/Technoloy_.jpg" class="card-img-top" alt="Gallery 1">
         <div class="card-body text-center">
           <h5 class="card-title">Technology</h5>
@@ -2052,7 +2052,153 @@
   
       <!-- Gallery 1 -->
       <div id="gallery1" class="row mt-3 d-none">
-        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 1">
+        <div class="col-6"><img src="/Images/Tech/technology.jpg" class="img-fluid rounded h-100" alt="Culture 1">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="/Images/Tech/technology.jpg">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology1.jpg" class="img-fluid rounded h-100" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="/Images/Tech/technology1.jpg">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology2.jpg" class="img-fluid rounded mt-5 h-50" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="/Images/Tech/technology2.jpg">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology3.jpg" class="img-fluid rounded mt-5 h-50" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="/Images/Tech/technology3.jpg">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology4.jpg" class="img-fluid rounded h-50" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected"
+            data-file="/Images/Tech/technology4.jpg">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology5.jpg" class="img-fluid rounded h-50" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected"
+            data-file="/Images/Tech/technology5.jpg">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology6.jpg" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="/Images/Tech/technology6.jpg">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology7.jpg" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="/Images/Tech/technology7.jpg">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology8.jpg" class="img-fluid rounded mt-3" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="/Images/Tech/technology8.jpg">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology9.jpg" class="img-fluid rounded mt-3" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="/Images/Tech/technology9.jpg">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology10.jpg" class="img-fluid rounded mt-3 h-50" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="/Images/Tech/technology10.jpg">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology11.jpg" class="img-fluid rounded mt-3 h-50" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="/Images/Tech/technology11.jpg">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology12.jpg" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="/Images/Tech/technology12.jpg">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology13.jpg" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="/Images/Tech/technology13.jpg">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology16.jpg" class="img-fluid rounded mt-3" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="/Images/Tech/technology16.jpg">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology15.jpg" class="img-fluid rounded mt-3 h-55" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="/Images/Tech/technology15.jpg">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology14.jpg" class="img-fluid rounded mt-3" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="/Images/Tech/technology14.jpg">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology17.jpg" class="img-fluid rounded mt-3" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology18.jpg" class="img-fluid rounded mt-3" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology19.jpg" class="img-fluid rounded mt-3" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology20.jpg" class="img-fluid rounded mt-3" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology21.jpg" class="img-fluid rounded mt-3" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology22.jpg" class="img-fluid rounded mt-3" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology23.jpg" class="img-fluid rounded mt-3" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology24.jpg" class="img-fluid rounded mt-3" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology25.jpg" class="img-fluid rounded mt-3" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology26.jpg" class="img-fluid rounded mt-3" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology27.jpg" class="img-fluid rounded mt-3 h-50" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology28.jpg" class="img-fluid rounded mt-3" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology29.jpg" class="img-fluid rounded mt-3" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology30.jpg" class="img-fluid rounded mt-3" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology31.jpg" class="img-fluid rounded mt-3" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="/Images/Tech/technology32.jpg" class="img-fluid rounded mt-3" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
           <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
         </div>
         <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
@@ -2062,8 +2208,8 @@
     </div>
   
     <!-- Card 2 -->
-    <div class="col-sm-3">
-      <div class="card w-100 shadow-sm" style="max-width: 250px;" onclick="toggleGallery('gallery2')">
+    <div class="col-md-4">
+      <div class="card w-100 shadow-sm" style="max-width: 400px;" onclick="toggleGallery('gallery2')">
         <img src="/Images/Food_Lifestyle.jpg" class="card-img-top" alt="Gallery 2">
         <div class="card-body text-center">
           <h5 class="card-title">Food & Lifestyle</h5>
@@ -2078,12 +2224,156 @@
         <div class="col-6"><img src="" class="img-fluid rounded" alt="Wildlife 2">
           <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
         </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
       </div>
     </div>
   
     <!-- Card 3 -->
-    <div class="col-sm-3">
-      <div class="card w-100 shadow-sm" style="max-width: 280px;" onclick="toggleGallery('gallery3')">
+    <div class="col-md-4">
+      <div class="card w-100 shadow-sm" style="max-width: 400px;" onclick="toggleGallery('gallery3')">
         <img src="/Images/Architecture.jpg" class="card-img-top" alt="Gallery 3">
         <div class="card-body text-center">
           <h5 class="card-title">Architecture & Land</h5>
@@ -2098,6 +2388,150 @@
         <div class="col-6"><img src="" class="img-fluid rounded" alt="Modern 2">
           <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
         </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
+        <div class="col-6"><img src="" class="img-fluid rounded" alt="Culture 2">
+          <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="">Download</button>
+        </div>
       </div>
     </div>
   </div>
@@ -2106,10 +2540,9 @@
   
 <!--upload your photo-->
 <section class="container pt-5 my-5 my_container">
-  <h2 class="text-center pt-4 mb-4 fs-1 fw-bold">Got Amazing Photos of Africa?
+  <h2 class="text-center pt-5 mt-5 mb-4 fs-1 fw-bold">Got Amazing Photos of Africa?
     <p class="fs-5 text-muted">Join our community of photographers and share the beauty of the continent with the world.</p>
   </h2>
-
   <form id="uploadForm" enctype="multipart/form-data">
     <div class="mb-3">
       <label for="photoTitle" class="form-label">Photo Title</label>
@@ -2152,7 +2585,7 @@
       </div>
 
       <!-- Contact -->
-      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3" id="Contact-Us">
         <h5 class="text-uppercase mb-4 fw-bold text-warning">Contact</h5>
         <p><i class="fas fa-home me-3"></i> Port Harcourt, Nigeria</p>
         <p><i class="fas fa-envelope me-3"></i> support@africagallery.com</p>
@@ -2177,6 +2610,10 @@
     </div>
   </div>
 </footer>
+
+<!--Back to Top-->
+<a href="#top" id="backToTop" class="btn btn-dark shadow rounded-circle position-fixed"
+  style="bottom: 20px; right: 20px; display: none; z-index: 9999;"><i class="bi bi-chevron-up"></i></a>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="/Script/button.js"></script>

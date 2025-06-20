@@ -462,11 +462,47 @@ body {
 .photo-logo {
   width: 150px;
   border: 1px solid #000;
-  border-radius: 5px;
-  
+  border-radius: 5px; 
 }
 
-/*Explore Section*/
+/*Hero section for lensi Africa*/
+.hero_video {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero_video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero_video::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.hero_text {
+  position: absolute;
+  z-index: 3;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*Explore Categories Section*/
 .Pastor {
   width: 100px;
   border-radius: 5px;
@@ -641,6 +677,15 @@ body {
   }
 }
 
+@media (min-width: 375px) {
+  .my-gallery-card {
+    position: absolute;
+    top: 148px;
+    left: auto;
+    right: 50%;
+  }
+}
+
 @media (min-width: 390px) {
   .my-gallery-card {
     position: absolute;
@@ -695,7 +740,7 @@ body {
   }
 }
 
-@media (min-width: 344px) and (max-width: 375px) {
+@media (min-width: 344px) {
   #my-imgcard1 {
     position: absolute;
     top: 150px;
@@ -708,6 +753,15 @@ body {
   #my-imgcard1 {
     position: absolute;
     top: 162px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 375px) {
+  #my-imgcard1 {
+    position: absolute;
+    top: 174px;
     left: auto;
     right: 50%;
   }
@@ -785,6 +839,15 @@ body {
   }
 }
 
+@media (min-width: 375px) {
+  .my-gallery-card5 {
+    position: absolute;
+    top: 148px;
+    left: auto;
+    right: 50%;
+  }
+}
+
 @media (min-width: 390px) {
   .my-gallery-card5 {
     position: absolute;
@@ -857,6 +920,15 @@ body {
   }
 }
 
+@media (min-width: 375px) {
+  .my-gallery-card6 {
+    position: absolute;
+    top: 112px;
+    left: auto;
+    right: 50%;
+  }
+}
+
 @media (min-width: 390px) {
   .my-gallery-card6 {
     position: absolute;
@@ -911,7 +983,7 @@ body {
   }
 }
 
-@media (min-width: 344px) and (max-width: 375px) {
+@media (min-width: 344px) {
   #my-imgcard7 {
     position: absolute;
     top: 390px;
@@ -924,6 +996,15 @@ body {
   #my-imgcard7 {
     position: absolute;
     top: 418px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 375px) {
+  #my-imgcard7 {
+    position: absolute;
+    top: 442px;
     left: auto;
     right: 50%;
   }
@@ -983,7 +1064,7 @@ body {
   }
 }
 
-@media (min-width: 344px) and (max-width: 375px) {
+@media (min-width: 344px) {
   .my-gallery-card8 {
     position: absolute;
     top: 128px;
@@ -996,6 +1077,15 @@ body {
   .my-gallery-card8 {
     position: absolute;
     top: 140px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 375px) {
+  .my-gallery-card8 {
+    position: absolute;
+    top: 149px;
     left: auto;
     right: 50%;
   }
@@ -1055,7 +1145,7 @@ body {
   }
 }
 
-@media (min-width: 344px) and (max-width: 375px) {
+@media (min-width: 344px) {
   .my-gallery-card9 {
     position: absolute;
     top: 120px;
@@ -1068,6 +1158,15 @@ body {
   .my-gallery-card9 {
     position: absolute;
     top: 135px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 375px) {
+  .my-gallery-card9 {
+    position: absolute;
+    top: 146px;
     left: auto;
     right: 50%;
   }
@@ -1145,6 +1244,15 @@ body {
   }
 }
 
+@media (min-width: 375px) {
+  #my-imgcard10 {
+    position: absolute;
+    top: 440px;
+    right: 50%;
+    left: auto;
+  }
+}
+
 @media (min-width: 390px) {
   #my-imgcard10 {
     position: absolute;
@@ -1199,7 +1307,7 @@ body {
   }
 }
 
-@media (min-width: 344px) and (max-width: 375px) {
+@media (min-width: 344px) {
   .my-gallery-card11 {
     position: absolute;
     top: 390px;
@@ -1212,6 +1320,15 @@ body {
   .my-gallery-card11 {
     position: absolute;
     top: 416px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 375px) {
+  .my-gallery-card11 {
+    position: absolute;
+    top: 440px;
     left: auto;
     right: 50%;
   }
@@ -1271,7 +1388,7 @@ body {
   }
 }
 
-@media (min-width: 344px) and (max-width: 375px) {
+@media (min-width: 344px) {
   .my-gallery-card12 {
     position: absolute;
     top: 388px;
@@ -1284,6 +1401,15 @@ body {
   .my-gallery-card12 {
     position: absolute;
     top: 412px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 375px) {
+  .my-gallery-card12 {
+    position: absolute;
+    top: 436px;
     left: auto;
     right: 50%;
   }
@@ -1343,7 +1469,7 @@ body {
   }
 }
 
-@media (min-width: 344px) and (max-width: 375px) {
+@media (min-width: 344px) {
   #my-imgcard13 {
     position: absolute;
     top: 124px;
@@ -1356,6 +1482,15 @@ body {
   #my-imgcard13 {
     position: absolute;
     top: 140px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 375px) {
+  #my-imgcard13 {
+    position: absolute;
+    top: 150px;
     left: auto;
     right: 50%;
   }
@@ -1415,7 +1550,7 @@ body {
   }
 }
 
-@media (min-width: 344px) and (max-width: 375px) {
+@media (min-width: 344px) {
   .my-gallery-card14 {
     position: absolute;
     top: 392px;
@@ -1428,6 +1563,15 @@ body {
   .my-gallery-card14 {
     position: absolute;
     top: 420px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 375px) {
+  .my-gallery-card14 {
+    position: absolute;
+    top: 444px;
     left: auto;
     right: 50%;
   }
@@ -1487,7 +1631,7 @@ body {
   }
 }
 
-@media (min-width: 344px) and (max-width: 375px) {
+@media (min-width: 344px) {
   .my-gallery-card15 {
     position: absolute;
     top: 390px;
@@ -1500,6 +1644,15 @@ body {
   .my-gallery-card15 {
     position: absolute;
     top: 418px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 375px) {
+  .my-gallery-card15 {
+    position: absolute;
+    top: 442px;
     left: auto;
     right: 50%;
   }
@@ -3374,7 +3527,6 @@ body {
   }
 }
 
-
 /*  Previous and Next Buttons  */
 .my-buttons {
   margin-top: 50vh;
@@ -3424,6 +3576,11 @@ body {
 /* logo of lensi africa (footer) */
 .lensi_africa {
   width: 150px;
+}
+
+/*back to top for lensi africa*/
+#backToTop {
+  font-size: 25px;
 }
 
 

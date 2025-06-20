@@ -240,3 +240,15 @@ function removeImageFromStorage(dataURL) {
   stored = stored.filter(photo => photo.dataURL !== dataURL);
   localStorage.setItem('uploadedPhotos', JSON.stringify(stored));
 }
+
+
+//The back to top
+window.addEventListener("scroll", function () {
+  const btn = document.getElementById("backToTop");
+  btn.style.display = window.scrollY > 300 ? "block" : "none";
+});
+
+document.getElementById("backToTop").addEventListener("click", function (e) {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
