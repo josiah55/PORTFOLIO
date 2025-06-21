@@ -109,14 +109,14 @@ body {
 }
 
 #myform input {
-  width: 60%;
+  max-width: 100%;
   outline: none;
   box-shadow: none;
   border-color: #5e5d5d6a;
 }
 
 #myform textarea {
-  width: 60%;
+  max-width: 100%;
   outline: none;
   box-shadow: none;
   border-color: #5e5d5d6a;

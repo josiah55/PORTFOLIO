@@ -111,7 +111,31 @@ const carouselElement = document.getElementById('groupCarousel');
 function toggleGallery(id) {
   const gallery = document.getElementById(id);
   gallery.classList.toggle('d-none');
-}  
+} 
+
+//Modal for more categories
+let currentImageSrc = "";
+
+// Set modal image and update current image source
+document.querySelectorAll('img[data-bs-toggle="modal"]').forEach(img => {
+  img.addEventListener('click', function () {
+    currentImageSrc = this.getAttribute('src');
+    document.getElementById('modalImage').src = currentImageSrc;
+  });
+});
+
+// Handle download button click inside modal
+document.getElementById('downloadBtn').addEventListener('click', function () {
+  if (currentImageSrc) {
+    const link = document.createElement('a');
+    link.href = currentImageSrc;
+    link.download = currentImageSrc.split('/').pop(); // extract file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+});
+
 
 
 // This is for the uploaded photos
